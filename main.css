@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;;
+    line-height: 1.3;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#description {
+    background-color: #E58B3C;
+}
+
+#how {
+    background-color: #7B9E72;
+}
+
+#mission {
+    background-color: #FAF5CE;
+}
