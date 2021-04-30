@@ -9,25 +9,95 @@ html {
 
 body {
     margin: 0px;
-    padding: 20px;
     font-family: 'Raleway', sans-serif;;
     line-height: 1.3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "hero"
+        "desc-image"
+        "desc-text"
+        "how-image"
+        "how-text"
+        "mission-text"
+        "newsletter"
+        "footer"
 }
 
-.grid-parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+#hero {
+    grid-area: hero;
+    /* photo by Holly Mandarich on Unsplash */
+    background: url(images/hero-image.jpg) center;
+    background-size: cover;
+    padding: 3.125rem;
 }
 
 #description {
     background-color: #E58B3C;
+    padding: 3.125rem;
+}
+
+#desc-text {
+    color: #1A2A3F;
 }
 
 #how {
     background-color: #7B9E72;
+    padding: 3.125rem;
+}
+
+#how-text {
+    color: #162A41;
+}
+
+.read-more-light a {
+    color: #FAF5CE;
+    text-decoration: none;
 }
 
 #mission {
     background-color: #FAF5CE;
+    color: #162A41;
+    padding: 3.125rem;
+}
+
+.read-more-dark a {
+    color: #569573;
+    text-decoration: none;
+}
+
+#desc-image {
+    grid-area: desc-image;
+    width: 36.75rem;
+    height: 46.5rem;
+    background-color: #000;
+}
+
+#desc-text {
+    grid-area: desc-text;
+}
+
+#how-text {
+    grid-area: how-text;
+}
+
+#how-image {
+    grid-area: how-image;
+    width: 36.75rem;
+    height: 46.5rem;
+    background-color: #000;
+}
+
+#mission-text {
+    grid-area: mission-text;
+}
+
+#newsletter {
+    grid-area: newsletter;
+    padding: 3.125rem;
+}
+
+footer {
+    grid-area: footer;
+    padding: 3.125rem;
 }
