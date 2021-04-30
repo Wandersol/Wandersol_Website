@@ -29,7 +29,38 @@ body {
     /* photo by Holly Mandarich on Unsplash */
     background: url(images/hero-image.jpg) center;
     background-size: cover;
-    padding: 3.125rem;
+    height: 62.5rem;
+}
+
+.main-title-parent {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    top: 50%;
+    /* top: 5%; Will put main title a bit higher up */
+}
+
+.main-title-child {
+    position: absolute;
+    background-color: #1A2A3F50;
+}
+
+#orange {
+    font-weight: bold;
+    font-size: 6rem;
+    color: #F4A41F;
+    padding: 0 5.05rem 0 6.25rem;
+    margin: 0;
+    left: .4375rem;
+}
+
+#blue {
+    font-weight: bold;
+    font-size: 6rem;
+    color: #1A2A3F;
+    padding: 0 5.5rem 0 6.25rem;
+    margin: 0;
+    left: 0;
 }
 
 #description {
