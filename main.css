@@ -7,9 +7,13 @@ html {
     box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.3;
     display: grid;
     grid-template-columns: 1fr;
@@ -29,11 +33,11 @@ body {
     /* photo by Holly Mandarich on Unsplash */
     background: url(images/hero-image.jpg) center;
     background-size: cover;
-    height: 62.5rem;
+    height: 100rem;
 }
 
 nav {
-    top: 12.5rem;
+    padding-top: 8rem;
 }
 
 nav li {
@@ -85,6 +89,8 @@ nav ul a {
 #description {
     background-color: #E58B3C;
     padding: 3.125rem;
+    height: 95rem;
+    font-size: 1.5rem;
 }
 
 #desc-text {
@@ -94,10 +100,12 @@ nav ul a {
 #how {
     background-color: #7B9E72;
     padding: 3.125rem;
+    height: 95rem;
 }
 
 #how-text {
     color: #162A41;
+    font-size: 1.5rem;
 }
 
 .read-more-light a {
@@ -109,6 +117,8 @@ nav ul a {
     background-color: #FAF5CE;
     color: #162A41;
     padding: 3.125rem;
+    height: 50rem;
+    font-size: 1.5rem;
 }
 
 .read-more-dark a {
@@ -121,14 +131,12 @@ nav ul a {
     width: 36.75rem;
     height: 46.5rem;
     background-color: #000;
+    padding-top: 8rem;
 }
 
 #desc-text {
     grid-area: desc-text;
-}
-
-#how-text {
-    grid-area: how-text;
+    padding-top: 8rem;
 }
 
 #how-image {
@@ -136,18 +144,86 @@ nav ul a {
     width: 36.75rem;
     height: 46.5rem;
     background-color: #000;
+    padding-top: 8rem;
+}
+
+#how-text {
+    grid-area: how-text;
+    padding-top: 8rem;
 }
 
 #mission-text {
     grid-area: mission-text;
+    padding-top: 3rem;
 }
 
 #newsletter {
     grid-area: newsletter;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     padding: 3.125rem;
+    height: 15rem;
+    background-color: #7B9E72;
 }
 
+#triple-join {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#newsletter p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #FAF5CE;
     padding: 3.125rem;
+    height: 30rem;
+    font-size: 90%;
+}
+
+footer a {
+    color:#7B9E72;
+    font-size: 90%;
+}
+
+#footer-contact {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+#footer-contact-title {
+    color: #162A41;
+}
+
+#footer-about {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#about {
+    color: #162A41;
+}
+
+#footer-cust-serv {
+    grid-column: 7/10;
+    grid-row: 2/3;
+}
+
+#cust-serv {
+    color:#162A41;
+}
+#footer-social {
+    grid-column: 10/12;
+    grid-row: 2/3;
+}
+
+#social {
+    color:#162A41;
+    font-weight: regular;
 }
