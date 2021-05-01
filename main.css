@@ -16,7 +16,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.3;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12 1fr);
     grid-template-areas: 
         "hero"
         "desc-image"
@@ -37,24 +37,40 @@ body {
 }
 
 nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     padding-top: 8rem;
 }
 
-nav li {
-    display: inline;
-    padding-right: 3rem;
+nav img {
+    grid-column: 2/3;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E9A642;
     font-size: 1.5rem;
     font-weight: bold;
 }
-nav ul {
-    list-style-type: none;
-    padding-left: 5rem;
+
+#nav-products {
+    grid-column: 4/5;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: #E9A642;
+#nav-mission {
+    grid-column: 6/7;
 }
+
+#nav-donate {
+    grid-column: 8/9; 
+}
+
+#nav-contact {
+    grid-column: 10/11; 
+}
+
+
+
 .main-title-parent {
     position: relative;
     padding: 0;
@@ -176,6 +192,8 @@ nav ul a {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+
 footer {
     grid-area: footer;
     display: grid;
@@ -189,7 +207,7 @@ footer {
 
 footer a {
     color:#7B9E72;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 #footer-contact {
@@ -226,4 +244,9 @@ footer a {
 #social {
     color:#162A41;
     font-weight: regular;
+}
+
+#back-to-top {
+    grid-column: 1/3;
+    grid-row: 3/4;
 }
