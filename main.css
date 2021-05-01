@@ -30,14 +30,18 @@ body {
 
 #hero {
     grid-area: hero;
-    /* photo by Holly Mandarich on Unsplash */
+    /* photo by Holly Mandarich on Unsplash.com */
     background: url(images/hero-image.jpg) center;
     background-size: cover;
     height: 100rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr;
 }
 
 nav {
     grid-column: 1/13;
+    grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 8rem;
@@ -48,10 +52,12 @@ nav img {
 }
 
 nav a {
-    text-decoration: none;
     color: #E9A642;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #nav-products {
@@ -70,22 +76,42 @@ nav a {
     grid-column: 10/11; 
 }
 
+#main-title {
+    grid-column: 1/13;
+    background-image: url(images/wandersol-title.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: auto;
+    padding: 0;
+}
 
+/* This is how to code the main title. Decided to use image instead.
+/* #main-title {
+    grid-column: 1/13;
+    width: 100%;
+    min-width: 25rem;
+    height: auto;    
+} 
 
 .main-title-parent {
+    grid-column: 1/13;
+    top: 50%;
     position: relative;
     padding: 0;
     margin: 0 auto;
-    top: 50%;
-    /* top: 5%; Will put main title a bit higher up */
-}
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    top: 5%; Will put main title a bit higher up 
+} 
 
 .main-title-child {
+    grid-column: 1/13;
     position: absolute;
     background-color: #1A2A3F50;
-}
+} 
 
 #orange {
+    grid-column: 1/13;
     font-weight: bold;
     font-size: 6rem;
     color: #F4A41F;
@@ -95,6 +121,7 @@ nav a {
 }
 
 #blue {
+    grid-column: 1/13;
     font-weight: bold;
     font-size: 6rem;
     color: #1A2A3F;
@@ -102,45 +129,16 @@ nav a {
     margin: 0;
     left: 0;
 }
+*/
 
 #description {
     background-color: #E58B3C;
     padding: 3.125rem;
     height: 95rem;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 1.5rem;
-}
-
-#desc-text {
-    color: #1A2A3F;
-}
-
-#how {
-    background-color: #7B9E72;
-    padding: 3.125rem;
-    height: 95rem;
-}
-
-#how-text {
-    color: #162A41;
-    font-size: 1.5rem;
-}
-
-.read-more-light a {
-    color: #FAF5CE;
-    text-decoration: none;
-}
-
-#mission {
-    background-color: #FAF5CE;
-    color: #162A41;
-    padding: 3.125rem;
-    height: 50rem;
-    font-size: 1.5rem;
-}
-
-.read-more-dark a {
-    color: #569573;
-    text-decoration: none;
 }
 
 #desc-image {
@@ -152,8 +150,31 @@ nav a {
 }
 
 #desc-text {
-    grid-area: desc-text;
+    color: #1A2A3F;
     padding-top: 8rem;
+    grid-area: desc-text;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+#desc-text h3 {
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.read-more-light a {
+    color: #FAF5CE;
+    font-size: 1rem;
+}
+
+#how {
+    background-color: #7B9E72;
+    padding: 3.125rem;
+    height: 95rem;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #how-image {
@@ -167,11 +188,43 @@ nav a {
 #how-text {
     grid-area: how-text;
     padding-top: 8rem;
+    font-family: 'Raleway', sans-serif;
+    color: #162A41;
+    font-size: 1.5rem;
+}
+
+#how-text h3 {
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#mission {
+    background-color: #FAF5CE;
+    color: #162A41;
+    padding: 3.125rem;
+    height: 50rem;
+    font-size: 1.5rem;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.read-more-dark a {
+    color: #569573;
+    font-size: 1rem;
 }
 
 #mission-text {
     grid-area: mission-text;
     padding-top: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#mission-text h3 {
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #newsletter {
@@ -181,13 +234,20 @@ nav a {
     grid-template-rows: 1fr 1fr;
     padding: 3.125rem;
     height: 15rem;
-    background-color: #7B9E72;
+    background-color: #7B9E72;  
 }
 
 #triple-join {
     grid-column: 2/3;
     grid-row: 1/2;
 }
+
+#triple-join p {
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 #newsletter p {
     grid-column: 2/3;
@@ -218,6 +278,9 @@ footer a {
 
 #footer-contact-title {
     color: #162A41;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #footer-about {
@@ -227,6 +290,9 @@ footer a {
 
 #about {
     color: #162A41;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #footer-cust-serv {
@@ -236,6 +302,9 @@ footer a {
 
 #cust-serv {
     color:#162A41;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #footer-social {
     grid-column: 10/12;
@@ -244,10 +313,60 @@ footer a {
 
 #social {
     color:#162A41;
-    font-weight: regular;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #back-to-top {
     grid-column: 1/3;
     grid-row: 3/4;
+}
+
+/* ------ Media Queries ----- */
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 766px) {
+    #hero, #description, #how{
+        height: 65rem;
+    }
+
+    #desc-image, #how-image {
+        height: 30rem;
+    }
+
+    #desc-text, #how-text {
+        padding-top: 5rem;
+    }
+
+    #mission {
+        height: 40rem;
+        padding-top: 0;
+    }
+    
+    #newsletter {
+        height: 10rem;
+        padding-top: 2rem;;
+    }
+
+    #newsletter p {
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer {
+        height: 5rem;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
+        grid-row: 1/2;
+    }
+
+    #back-to-top {
+        grid-row: 2/3;
+    }
 }
