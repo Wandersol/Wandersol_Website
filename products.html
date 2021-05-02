@@ -4,57 +4,81 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.typekit.net/nxj5tkr.css">
+        <link rel="stylesheet" href="https://use.typekit.net/nxj5tkr.css">
+        <link rel="stylesheet" href="products.css">
         <title>Products</title>
     </head>
     <body>
         <!-- Hide background image -->
-        <div id="hero">
-            <nav>
-                <img src="" alt="" id="logo">
-                <!-- Clicking logo takes back to homepage. For now, will use text "Home" -->
-                <a href="index.html">Home</a>
-                <ul>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="mission.html">Mission</a></li>
-                    <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>   
-            </nav>
+        
+        <nav>
+            <a href="index.html" id="logo-home">WS</a>
+            <a href="products.html" id="nav-products">Products</a>
+            <a href="mission.html" id="nav-mission">Mission</a>
+            <a href="donate.html" id="nav-donate">Donate</a>
+            <a href="contact" id="nav-contact">Contact</a>  
+        </nav>
+        
+        <div id="products-menu-left">
+            <p id="products-menu-left-title">Products</p>
+            <p id="products-menu-left-title-bold">All</p>
+            <div id="product-sub-category">
+                <p id="product-wandersol-pack"><a href="wandersol.html">Backpack</a></p>
+                <p>Power Bank</p>
+                <p>Cables</p>
+                <p>Maintnenance</p>
+            </div>
+            
         </div>
-        <div id="products">
-            <h4>Products</h4>
-            <!-- Need 6 product cards here -->
-            <!-- One of the cards should link to wandersol page: wandersol.html -->
-            <div id="wandersol-pack"><a href="wandersol.html">Wandersol</a></div>
+
+        <div id="product-cards">
+            <div id="product-wandersol-pack" class="card" a href="wandersol.html">
+                <!-- <img src="" alt="wandersol backpack"> -->
+                <p id="wandersol-name">Wandersol</p>
+                <p>$130.00</p>
+                <p>Add to cart</p>
+            </div>
+            <div class="card" id="blank1">Wandersol 2.0</div>
+            <div class="card" id="blank2">Power Bank with Cable</div>
+            <div class="card" id="blank3">Power Bank</div>
+            <div class="card" id="blank4">Charging Cable</div>
+            <div class="card" id="blank5">Maintenance</div>
         </div>
-       
+        
         <footer>
-            <div class="footer-section">
-                <div id="footer-contact">Contact</div>
+            <div id="footer-contact">
+                <div id="footer-contact-title">Contact</div>
                 <div id="footer-email">
-                    <a href="">service@wandersol.com</a>
+                    <p><a href="">service@wandersol.com</a></p>
                 </div>
             </div>
-            <div class="footer-section">
+            <div id="footer-about">
                 <div id="about">About</div>
                 <div id="about-p">
-                    <a href="mission.html">Mission</a>
+                    <p><a href="mission.html">Mission</a></p>
                 </div>
             </div>
-            <div class="footer-section">
+            <div id="footer-cust-serv">
                 <div id="cust-serv">Customer Service</div>
                 <div id="general-info">
-                    <p>Shipping</p>
-                    <p>Terms & Conditions</p>
-                    <p>FAQ</p>    
+                    <p><a href="#">Shipping</a></p>
+                    <p><a href="#">Terms & Conditions</a></p>
+                    <p><a href="#">FAQ</a></p>  
                 </div>     
             </div>
-            <div class="footer-section">
-                <div id="social">
-                    <a href="#">YouTube</a>
-                    <a href="#">Instagram</a>
+            <div id="footer-social">
+                <div id="social">Social</div>
+                <div id="social-links">
+                    <p><a href="#">YouTube</a></p>
+                    <p><a href="#">Instagram</a></p>
                 </div>
             </div>
+            <label for="email">Join Our Mailing List</label>
+            <input type="email" id="email" placeholder="Email" pattern=".+@globex.com" size="30">
+            <img src="images/chevron-right.png" alt="chevron right" id="email-png">
          </footer>
          
     </body>

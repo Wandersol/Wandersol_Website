@@ -28,6 +28,8 @@ body {
         "footer"
 }
 
+/* ----- Hero (main styles) ----- */
+
 #hero {
     grid-area: hero;
     /* photo by Holly Mandarich on Unsplash.com */
@@ -38,6 +40,8 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr, 1fr, 1fr;
 }
+
+/* ----- Navbar and Navbar Elements ----- */
 
 nav {
     grid-column: 1/13;
@@ -75,6 +79,7 @@ nav a {
 #nav-contact {
     grid-column: 10/11; 
 }
+/* ----- Main Title Div with Main Title Image ----- */
 
 #main-title {
     grid-column: 1/13;
@@ -84,6 +89,8 @@ nav a {
     height: auto;
     padding: 0;
 }
+
+/* ----- Description ----- */
 
 /* This is how to code the main title. Decided to use image instead.
 /* #main-title {
@@ -168,6 +175,8 @@ nav a {
     font-size: 1rem;
 }
 
+/* ----- How ----- */
+
 #how {
     background-color: #7B9E72;
     padding: 3.125rem;
@@ -198,6 +207,8 @@ nav a {
     font-weight: 400;
     font-style: normal;
 }
+
+/* ----- Mission ----- */
 
 #mission {
     background-color: #FAF5CE;
@@ -231,6 +242,8 @@ nav a {
     font-style: normal;
 }
 
+/* ----- Newsletter ----- */
+
 #newsletter {
     grid-area: newsletter;
     display: grid;
@@ -258,6 +271,7 @@ nav a {
     grid-row: 2/3;
 }
 
+/* ----- Footer ----- */
 
 footer {
     grid-area: footer;
@@ -327,7 +341,7 @@ footer a {
     grid-row: 3/4;
 }
 
-/* ------ Media Queries ----- */
+/* ------ Media Query ----- */
 
 /* Tablet Styles */
 
@@ -375,6 +389,9 @@ footer a {
     }
 } 
 
+/* ----- Media Query ----- */
+
+/* Desktop Styles */
 @media only screen and (min-width:1350px) {
     body {
         grid-template-areas: 
