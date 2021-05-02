@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+    background-color: #FAF5CE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.6rem;
+    line-height: 1.3;
+    display: grid;
+    grid-template-columns: repeat(12 1fr);
+    grid-template-areas: 
+        "nav"
+        "product-menu-left blank0"
+        "blank1"
+        "blank2"
+        "blank3"
+        "blank4"
+        "blank5"
+        "footer"
+    ;
+}
+/* ----- Navbar ----- */
+
+nav {
+    grid-area: nav;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+nav a {
+    color: #E9A642;
+    /* font-size 1.5rem */
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#logo-home {
+    grid-column: 1/2;
+    color: #3b76a3;
+    padding-left: 0.25rem;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nav-products {
+    grid-column: 4/5;
+}
+
+#nav-mission {
+    grid-column: 6/7;
+}
+
+#nav-donate {
+    grid-column: 8/9; 
+}
+
+#nav-contact {
+    grid-column: 10/11; 
+}
+
+#wandersol-image {
+    grid-column: 4/10;
+    grid-row: 3/4;
+    width: 10.625rem;
+    height: 12.5rem;
+}
+
+#wandersol-title-large {
+    grid-column: 5/9;
+    grid-row: 2/3;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+
+
+
+/* ----- Footer ----- */
+
+footer {
+    grid-area: footer;
+    grid-column: 1/13;
+    grid-row: 8/9;
+    font-size: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+footer a {
+    color: #2D4826;
+    font-size: 80%;
+}
+
+#footer-contact {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color: #7B9E72;
+}
+
+#footer-contact-title {
+    color: #7B9E72;
+}
+
+.footer-title {
+    color: #7B9E72;
+}
+
+#footer-about {
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+#about {
+    color: #7B9E72;
+}
+
+#footer-cust-serv {
+    grid-column: 7/10;
+    grid-row: 2/3;
+}
+
+#cust-serv {
+    color: #7B9E72;
+}
+#footer-social {
+    grid-column: 11/12;
+    grid-row: 2/3;
+}
+
+#social {
+    color: #7B9E72;
+}
+
+/* ----- Mailing List ----- */
+label {
+    grid-area: footer;
+    grid-column: 3/6;
+    grid-row: 3/4;
+    padding-top: 0.375rem;
+    color: #2D4826; 
+}
+
+#email {
+    grid-area: footer;
+    grid-column: 7/10;
+    grid-row: 3/4;
+    width: 6.35rem;
+    height: 1.25rem;
+    border: none;
+    font-size: 0.2rem;
+    color: #bfd1bc;
+    -webkit-box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25); 
+}
+
+ footer img {
+    grid-area: footer;
+    grid-column: 11/12;
+    grid-row: 3/4;
+    padding-top: 0.3125rem;
+}
+
