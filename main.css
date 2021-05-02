@@ -285,7 +285,7 @@ footer {
 }
 
 footer a {
-    color:#7B9E72;
+    color: #2D4826;
     font-size: 80%;
 }
 
@@ -295,10 +295,7 @@ footer a {
 }
 
 #footer-contact-title {
-    color: #162A41;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #7B9E72;
 }
 
 #footer-about {
@@ -307,10 +304,7 @@ footer a {
 }
 
 #about {
-    color: #162A41;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #7B9E72;
 }
 
 #footer-cust-serv {
@@ -319,10 +313,7 @@ footer a {
 }
 
 #cust-serv {
-    color:#162A41;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #7B9E72;
 }
 #footer-social {
     grid-column: 10/12;
@@ -330,10 +321,7 @@ footer a {
 }
 
 #social {
-    color:#162A41;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: #7B9E72;
 }
 
 #back-to-top {
