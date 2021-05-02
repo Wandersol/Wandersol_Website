@@ -20,7 +20,8 @@ body {
     line-height: 1.3;
     display: grid;
     grid-template-columns: repeat(12 1fr);
-    grid-template-areas: 
+    grid-template-rows: repeat(15 1fr);
+    /* grid-template-areas: 
         "nav"
         "product-menu-left blank0"
         "blank1"
@@ -29,12 +30,12 @@ body {
         "blank4"
         "blank5"
         "footer"
-    ;
+    ; */
 }
 /* ----- Navbar ----- */
 
 nav {
-    grid-area: nav;
+    /* grid-area: nav; */
     grid-column: 1/13;
     grid-row: 1/2;
     display: grid;
@@ -45,7 +46,6 @@ nav {
 
 nav a {
     color: #E9A642;
-    /* font-size 1.5rem */
     font-size: 0.6rem;
     font-weight: bold;
     font-family: filson-pro, sans-serif;
@@ -79,14 +79,15 @@ nav a {
 }
 
 #wandersol-image {
-    grid-column: 4/10;
+    background-color: #E9A642;
+    grid-column: 2/8;
     grid-row: 3/4;
     width: 10.625rem;
     height: 12.5rem;
 }
 
 #wandersol-title-large {
-    grid-column: 5/9;
+    grid-column: 2/4;
     grid-row: 2/3;
     font-family: cubano, sans-serif;
     font-weight: 400;
@@ -94,15 +95,90 @@ nav a {
     font-size: 1rem;
 }
 
+#price {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
 
+#additional-images {
+    grid-column: 5/8;
+    grid-row: 5/6;
+}
 
+#review-stats {
+    grid-column: 2/4;
+    grid-row: 6/7;
+}
+
+#lengthy-description {
+    grid-column: 2/11;
+    grid-row: 7/8;
+}
+
+#qty-add {
+    grid-column: 2/5;
+    grid-row: 8/9;
+}
+
+#customer-reviews {
+    grid-column: 2/5;
+    grid-row: 9/10;
+}
+
+#jeremy {
+    grid-column: 2/4;
+    grid-row: 10/11;
+    /* padding-right: 3rem; */
+}
+
+#melanie {
+    grid-column: 4/8;
+    grid-row: 10/11;
+    padding-left: 3rem;
+}
+
+#may-also-like {
+    grid-column: 2/5;
+    grid-row: 11/12;
+}
+
+.card {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#power-bank {
+    background-color: #7B9E72;
+    grid-column: 2/4;
+    grid-row: 12/13;
+}
+
+#maintenance {
+    background-color: #E9A642;
+    grid-column: 4/6;
+    grid-row: 12/13;
+}
+
+#wandersol-2 {
+    background-color: #E2838A;
+    grid-column: 6/8;
+    grid-row: 12/13;
+}
+
+#cables {
+    background-color: #b7c3cf;
+    grid-column: 8/10;
+    grid-row: 12/13;
+}
 
 /* ----- Footer ----- */
 
 footer {
-    grid-area: footer;
+    /* grid-area: footer; */
     grid-column: 1/13;
-    grid-row: 8/9;
+    grid-row: 13/14;
     font-size: 0.5rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);

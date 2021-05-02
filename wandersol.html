@@ -9,6 +9,10 @@
     </head>
     <body>
 
+        <!-- 5/2/21: I realized that less hierarchy works better for grid
+        placement, so I changed the HTML structure of this page to make
+        it easier to move elements around in a 12 x 15 grid. (SB) -->
+
         <nav>
             <a href="index.html" id="logo-home">WS</a>
             <a href="products.html" id="nav-products">Products</a>
@@ -17,32 +21,32 @@
             <a href="contact" id="nav-contact">Contact</a>  
         </nav>
 
-        <div class="left">
+        <div id="wandersol-title-large">Wandersol</div>
             <!-- Main backpack image here -->
-            <img src="" alt="">
-        </div>
-        <div class="right">
-            <p id="wandersol-title-large">Wandersol</p>
-            <div id="review-stats">
-                <!-- Image of stars here -->
-                <div id="wandersol-image"></div>
-                <p>234,567 reviews</p>
-            </div>
-            <div id="lengthy-description">
-                <p>The WanderSol Pack is a rugged, futuristic, and eco-friendly backpack that harnesses the power of the sun. The built-in panel, when fully charged, can power your phone, a small radio, a portable light or even a small personal-sized fan.</p>
-                <p>The straps are made of a durable nylon-polyester blend material that will keep your contents safe and dry. They are ergonomically made for comfort and ease of adjustment. The solar panel itself fits inside an outer pocket-shield that you can remove from to place in the sun to charge. It will also charge inside the shield. The panel features an LED light display (?) that will indicate the amount of charge left as well as a 5V port that is accessible via a USB adapter cable. </p>
-                <p>The inside of the WanderSol Pack has two compartments. One for larger items like a laptop or camera, and another for smaller items that you may want to keep separate and find easily. The interior is lined with …… and is also waterproof. </p>
-                <p>Designed for equal parts outdoor enthusiast and on the move commuter, the WanderSol Pack is ready to power you on through your next day's outing, whether it’s to the mountains or to the office!</p>
-            </div>
-        </div>  
+        <div id="wandersol-image"></div>
+
+        <div id="price">$130.00</div>
+
         <div id="additional-images">
             <!-- Add images -->
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div id="addtl1"></div>
+            <div id="addtl2"></div>
+            <div id="addtl3"></div>
+            <div id="addtl4"></div>
+        </div>  
+             
+        <div id="review-stats">
+            <!-- Image of stars here -->
+            <p>234,567 reviews</p>
         </div>
-        <!-- Not sure I am doing these buttons correctly... --> 
+
+        <div id="lengthy-description">
+            <p>The WanderSol Pack is a rugged, futuristic, and eco-friendly backpack that harnesses the power of the sun. The built-in panel, when fully charged, can power your phone, a small radio, a portable light or even a small personal-sized fan.</p>
+            <p>The straps are made of a durable nylon-polyester blend material that will keep your contents safe and dry. They are ergonomically made for comfort and ease of adjustment. The solar panel itself fits inside an outer pocket-shield that you can remove from to place in the sun to charge. It will also charge inside the shield. The panel features an LED light display (?) that will indicate the amount of charge left as well as a 5V port that is accessible via a USB adapter cable. </p>
+            <p>The inside of the WanderSol Pack has two compartments. One for larger items like a laptop or camera, and another for smaller items that you may want to keep separate and find easily. The interior is lined with …… and is also waterproof. </p>
+            <p>Designed for equal parts outdoor enthusiast and on the move commuter, the WanderSol Pack is ready to power you on through your next day's outing, whether it’s to the mountains or to the office!</p>
+        </div>
+
         <div id="qty-add">
             <form action="">
                 <label for="qty">Qty</label>
@@ -57,47 +61,37 @@
                   <option value="8">8</option>
                   <option value="9">9</option>  
                 </select>
-                <!-- I don't quite rememeber how to properly do buttons either.... -->
+
                 <label for="add-to-cart">Add to Cart</label>
                 <button type="button" id="add-to-cart">
-            </form>  
+            </form> 
         </div>
-        <div id="customer_reviews">
+        
+        <div id="customer-reviews">
             <h3>Customer Reviews</h3>
-            <!-- More cards.... -->
-            <div class="review" id="jeremy">
-                <!-- Stars -->
-                <img src="" alt="">
-                <p>Jeremy A.</p>
-                <p>This backpack will make your day! I love how I can be out for a hike, and charge my phone battery and small light while I walk in the sunshine. Great product!</p>
-            </div>
-            <div class="review" id="melanie">
-                <!-- Stars -->
-                <img src="" alt="">
-                <p>Melanie L.</p>
-                <p>The Wandersol backpack helps keep my devices charged nicely. I purchased the power bank as well so I can store solar power for later. I also love Wandersol’s aim to help people experiencing homelessness!</p>
-                <!-- Two heart emojis -->
-                <img src="" alt="">
-            </div>
         </div>
-        <div id="also-like">
-            <!-- Annnnnnd more cards -->
-            <!-- Not sure if paragraphs are children or siblings of images -->
-            <div class="card">
-                <img src="" alt="" id="bank">
-                    <p></p>
-                </img>
-                <img src="" alt="" id="maintenance">
-                    <p></p>
-                </img>
-                <img src="" alt="" id="wandersol-2.0">
-                    <p></p>
-                </img>
-                <img src="" alt="" id="cables">
-                    <p></p>
-                </img>
-            </div>
+
+        <div class="review" id="jeremy">
+            <!-- Stars -->
+            <!-- <img src="" alt=""> -->
+            <p>Jeremy A.</p>
+            <p>This backpack will make your day! I love how I can be out for a hike, and charge my phone battery and small light while I walk in the sunshine. Great product!</p>
         </div>
+
+        <div class="review" id="melanie">
+            <!-- Stars -->
+            <!-- <img src="" alt=""> -->
+            <p>Melanie L.</p>
+            <p>The Wandersol backpack helps keep my devices charged nicely. I purchased the power bank as well so I can store solar power for later. I also love Wandersol’s aim to help people experiencing homelessness!</p>
+            <!-- Two heart emojis -->
+            <!-- <img src="" alt=""> -->
+        </div>
+         
+        <div id="may-also-like"><h3>You May Also Like</h3></div>
+        <div class="card" id="power-bank">Power Bank</div>
+        <div class="card" id="maintenance">Maintenance</div>
+        <div class="card" id="wandersol-2">Wandersol 2.0</div>
+        <div class="card" id="cables">Cables</div>
        
         <footer>
             <div id="footer-contact">
