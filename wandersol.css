@@ -27,7 +27,6 @@ body {
 /* ----- Navbar ----- */
 
 nav {
-    /* grid-area: nav; */
     grid-column: 1/13;
     grid-row: 1/2;
     display: grid;
@@ -216,6 +215,12 @@ nav a {
     grid-row: 9/10;
     color: #2D4826;
     border-bottom: 1px solid #2D4826;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #2D4826;
+    margin-bottom: 1rem;
 }
 
 .review-stars {
@@ -244,6 +249,12 @@ nav a {
     grid-row: 11/12;
     color: #2D4826;
     border-bottom: 1px solid #2D4826;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #2D4826;
+    margin-bottom: 1rem;
 }
 
 .card {
@@ -283,7 +294,6 @@ nav a {
 /* ----- Footer ----- */
 
 footer {
-    /* grid-area: footer; */
     grid-column: 1/13;
     grid-row: 13/14;
     font-size: 0.5rem;
@@ -405,8 +415,8 @@ label {
     .dropbtn {
         padding: 10px 25px;
         font-size: 0.5rem;
-        /* font-weight: bold; */
     }
+
     #review-stats {
         line-height: .5;
     }
@@ -441,4 +451,169 @@ label {
         grid-column: 8/9;
         padding-left: 3rem;
     }
-}  
+} 
+
+/* ----- Media Query ----- */
+/* ----- Inbetween Tablet and Desktop ----- */
+
+@media only screen and (min-width: 980px) {
+    #wandersol-image {
+        grid-column: 2/5;
+    }
+
+    #additional-images {
+        grid-column: 5/6;
+    }
+}
+
+/* ----- Media Query ----- */
+/* ----- Desktop Styles ----- */
+
+@media only screen and (min-width: 1350px) {
+    body {
+        font-size: 1.5rem;
+        display: grid;
+        grid-template-areas:
+            "nb nb nb nb nb nb nb nb nb nb"
+            "bi bi bi bi bi wt wt wt wt wt"
+            "bi bi bi bi bi wp wp wp wp wp"
+            "bi bi bi bi bi ws ws ws ws ws"
+            "bi bi bi bi bi ld ld ld ld ld"
+            "bi bi bi bi bi qa qa qa qa qa"
+            "ai ai ai ai ai ai ai ai ai ai"
+            "cr cr cr cr cr cr cr cr cr cr"
+            "jr jr jr mr mr mr mr mr mr mr"
+            "ym ym ym ym ym ym ym ym ym ym"
+            "pb ma ma .. w2 w2 .. ca ca ca"
+            "ft ft ft ft ft ft ft ft ft ft";
+        /* Decided to try grid areas again... */
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+    nav {
+        grid-area: nb;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    #wandersol-image {
+        background-color: #E9A642;
+        grid-area: bi;
+        width: 39.25rem;
+        height: 52rem;
+    }
+
+    #wandersol-title-large {
+        grid-area: wt;
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        top: -20px;
+    }
+
+    #price {
+        grid-area: wp;
+        margin: 0;
+        padding: 0;
+    }
+
+    #review-stats {
+        grid-area: ws;
+    }
+
+    #large-review-stars {
+        width: 8rem;
+    }
+
+    #review-stats p {
+        display: inline;
+        font-size: 0.8rem;
+        padding-left: 2rem;
+        font-weight: bold;
+    }
+
+    #lengthy-description {
+        grid-area: ld;
+        font-size: 1rem;
+    }
+
+    #qty-add {
+        grid-area: qa; 
+    }
+
+    .dropbtn {
+        font-size: 0.8rem;
+    }
+
+    #add-to-cart {
+        font-size: 0.8rem;
+    }
+
+    #additional-images {
+        grid-area: ai;
+    }
+
+    .addtl-class {
+        display: inline-block;
+    }
+
+    #customer-reviews {
+        grid-area: cr;
+    }
+
+    #jeremy {
+        grid-area: jr;
+        font-size: 0.9rem;
+    }
+
+    #melanie {
+        grid-area: mr;
+        font-size: 0.9rem;
+    }
+
+    #may-also-like {
+        grid-area: ym;
+    }
+
+    .card {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #power-bank {
+        grid-area: pb;
+    }
+    
+    #maintenance {
+        grid-area: ma;
+    }
+    
+    #wandersol-2 {
+        grid-area: w2;
+    }
+    
+    #cables {
+        grid-area: ca;
+    }
+
+    footer {
+        grid-area: ft;
+        padding-top: 0;
+        font-size: 1.125rem;
+        padding-bottom: 5rem;
+    }
+
+    #email {
+        font-size: 0.6rem;
+        width: 15rem;
+        height: 2rem;
+        padding-left: .5rem;
+    }
+    footer img {
+        grid-column: 9/10;
+        padding-left: 4rem;
+    }
+}
