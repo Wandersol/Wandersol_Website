@@ -416,7 +416,7 @@ input {
 }
 
 #message::placeholder {
-    text-align: top;
+    transform: translateY(-4.5rem);
 }
 
 #modal-image img{
