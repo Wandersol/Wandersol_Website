@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.typekit.net/nxj5tkr.css">
+        <link rel="stylesheet" href="https://use.typekit.net/nxj5tkr.css">
         <link rel="stylesheet" href="wandersol.css">
         <title>Wandersol</title>
     </head>
@@ -29,14 +33,14 @@
 
         <div id="additional-images">
             <!-- Add images -->
-            <div id="addtl1"></div>
-            <div id="addtl2"></div>
-            <div id="addtl3"></div>
-            <div id="addtl4"></div>
+            <div id="addtl1" class="addtl-class"></div>
+            <div id="addtl2" class="addtl-class"></div>
+            <div id="addtl3" class="addtl-class"></div>
+            <div id="addtl4" class="addtl-class"></div>
         </div>  
              
         <div id="review-stats">
-            <!-- Image of stars here -->
+            <img src="images/review-stars.png" alt="review stars" id="large-review-stars">
             <p>234,567 reviews</p>
         </div>
 
@@ -48,23 +52,18 @@
         </div>
 
         <div id="qty-add">
-            <form action="">
-                <label for="qty">Qty</label>
-                <select name="qty" id="qty" size="1">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>  
-                </select>
 
-                <label for="add-to-cart">Add to Cart</label>
-                <button type="button" id="add-to-cart">
-            </form> 
+            <div class="dropdown">
+                <button class="dropbtn" id="qty">Quantity</button>
+                <div class="dropdown-content">
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                </div>
+              </div>
+
+            <button type="button" id="add-to-cart">Add to Cart</button>
+            
         </div>
         
         <div id="customer-reviews">
@@ -73,25 +72,26 @@
 
         <div class="review" id="jeremy">
             <!-- Stars -->
-            <!-- <img src="" alt=""> -->
+            <img src="images/review-stars.png" alt="review stars" class="review-stars">
             <p>Jeremy A.</p>
             <p>This backpack will make your day! I love how I can be out for a hike, and charge my phone battery and small light while I walk in the sunshine. Great product!</p>
         </div>
 
         <div class="review" id="melanie">
             <!-- Stars -->
-            <!-- <img src="" alt=""> -->
+            <img src="images/review-stars.png" alt="review stars" class="review-stars">
             <p>Melanie L.</p>
-            <p>The Wandersol backpack helps keep my devices charged nicely. I purchased the power bank as well so I can store solar power for later. I also love Wandersol’s aim to help people experiencing homelessness!</p>
+            <p>The Wandersol backpack helps keep my devices charged nicely. I purchased the power bank as well so I can store solar power for later. I also love Wandersol’s aim to help people experiencing homelessness!
             <!-- Two heart emojis -->
-            <!-- <img src="" alt=""> -->
+            <img src="images/wandersol-hearts2.png" alt="heart" id="heart">
+            </p>
         </div>
          
         <div id="may-also-like"><h3>You May Also Like</h3></div>
-        <div class="card" id="power-bank">Power Bank</div>
-        <div class="card" id="maintenance">Maintenance</div>
-        <div class="card" id="wandersol-2">Wandersol 2.0</div>
-        <div class="card" id="cables">Cables</div>
+        <div class="card" id="power-bank"></div>
+        <div class="card" id="maintenance"></div>
+        <div class="card" id="wandersol-2"></div>
+        <div class="card" id="cables"></div>
        
         <footer>
             <div id="footer-contact">
