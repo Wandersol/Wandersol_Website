@@ -139,7 +139,6 @@ nav a {
 #lengthy-description {
     grid-column: 2/10;
     grid-row: 7/8;
-    /* font-size: .75rem; */
 }
 
 /* --- Dropdown Quantity Button ----- */
@@ -368,3 +367,78 @@ label {
     padding-top: 0.3125rem;
 }
 
+/* ----- Media Query ----- */
+
+/* ----- Tablet Styles ----- */
+
+@media only screen and (min-width: 766px) {
+    body {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    #wandersol-title-large {
+        font-size: 1.5rem;
+    }
+
+    #wandersol-image {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    .addtl-class {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #price {
+        margin-top: 1rem;
+    }
+
+    #lengthy-description {
+        grid-column: 2/8;
+    }
+
+    .dropbtn {
+        padding: 10px 25px;
+        font-size: 0.5rem;
+        /* font-weight: bold; */
+    }
+    #review-stats {
+        line-height: .5;
+    }
+
+    .review-stars {
+        width: 6rem;
+    }
+
+    #jeremy {
+        font-size: 0.75rem;
+    }
+
+    #melanie {
+        font-size: 0.75rem;
+    }
+
+    .card {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #footer-contact {
+        padding-left: 1.125rem;
+    }
+
+    label {
+        grid-column: 5/8;
+        padding-left: 0.75rem;
+    }
+
+    footer img {
+        grid-column: 8/9;
+        padding-left: 3rem;
+    }
+}  
