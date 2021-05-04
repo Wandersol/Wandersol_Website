@@ -351,6 +351,7 @@ footer a {
     box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26);
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 #modal-form {
@@ -367,7 +368,7 @@ footer a {
     font-size: 2rem;
     color: #2D4826;
     text-align:center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 #modal-form p {
@@ -410,13 +411,35 @@ input {
 #message {
     display:block;
     width: 21.56rem;
-    height: 11.375rem;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10rem;
     resize: none;
 }
 
-#message::placeholder {
-    transform: translateY(-4.5rem);
+#modal-submit {
+    font-weight: bold;
+    color: #FAF5CE !important;
+    font-size: 0.4rem;
+    box-shadow: 1px 1px 1px #DEDEDE;
+    padding: 10px 25px;
+    background: #2D4826;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+#modal-submit:hover {
+    color: #2D4826 !important;
+    background: #FAF5CE;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 4rem;
+    transform: rotate(45deg);
+    color: #2D4826;
 }
 
 #modal-image img{
