@@ -375,7 +375,6 @@ footer a {
 
 #footer-cust-serv {
     grid-column: 7/10;
-    /* grid-row: 1/2; */
 }
 
 #cust-serv {
@@ -383,7 +382,6 @@ footer a {
 }
 #footer-social {
     grid-column: 10/12;
-    /* grid-row: 1/2; */
 }
 
 #social {
@@ -391,8 +389,16 @@ footer a {
 }
 
 #back-to-top {
-    grid-column: 2/3;
-    /* grid-row: 2/3; */
+    grid-column: 2/4;
+}
+
+#chevron-up {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    position:relative;
+    right: 2.5rem;
+    bottom: 0.5rem;
+    color: #2D4826;
 }
 
 /* --- Modal Styles ----- */
@@ -540,19 +546,38 @@ input {
     
     #newsletter {
         height: 15rem;
-        /* line-height: 1rem; */
         padding-top: 0;
     }
 
     #triple-join {
         line-height: 1.5rem;
         top: 1rem;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
+        padding-left: 1.5rem;
     }
 
     #newsletter p {
         padding: 0;
         margin: 0;
+    }
+
+    #home-email {
+        top: -.5rem;
+        height: 50%;
+    }
+    
+    #home-email p {
+        position: relative;
+        top: 1rem;
+    }
+    
+    #chevron-yellow-news {
+        color: #FAF5CE;
+        font-size: 2rem;
+        display: inline;
+        position: relative;
+        top: 0.5rem;
+        padding-left: 12rem;
     }
 
     #footer {
@@ -565,15 +590,52 @@ input {
     #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
         grid-row: 1/2;
     }
-
-    #back-to-top {
-        grid-row: 2/3;
+    
+    #chevron-up {
+        right: 3.5rem;
     }
 } 
 
 /* ----- Media Query ----- */
+/* ----- Ipad Pro ----- */
+@media only screen and (min-width: 1024px) {
+    #newsletter {
+        height: 20rem;
+    }
+    #triple-join {
+        grid-column: 5/10;
+        right: 1.5rem;
+        font-size: 2rem;
+        top: 3.5rem;
+    }
 
-/* Desktop Styles */
+    #home-email {
+        grid-column: 5/8;
+        margin-left: 3rem;
+    }
+
+   #home-email p {
+       top: 2rem;
+   }
+
+    #chevron-yellow-news {
+         padding-left: 9rem;
+         top: 0.75rem;
+    }
+
+    #map-lines {
+        bottom: 20rem;
+    }
+
+    #footer {
+        height: 20rem;
+        margin-top: 25rem;
+    }
+}
+
+/* ----- Media Query ----- */
+
+/* ----- Desktop Styles ------ */
 @media only screen and (min-width:1350px) {
     body {
         grid-template-areas: 
@@ -670,7 +732,7 @@ input {
 
     #newsletter {
         grid-area: newsletter;
-        height: 16rem;
+        height: 20rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -687,21 +749,28 @@ input {
         margin: auto;
     }
 
+    #map-lines {
+        bottom: 20rem;
+    }
+
     footer {
-        height: 50rem;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 1fr 1fr;
+        height: 30rem;
+        padding-top: 8rem;
     }
 
     #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
-        grid-row: 2/3;
+        grid-row: 1/2;
         padding-top: 10rem;
     }
 
     #back-to-top {
-        grid-column: 2/3;
-        grid-row: 3/4;
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    #chevron-up {
+        grid-column: 3/4;
+        grid-row: 2/3;
     }
 
     #footer-contact {
