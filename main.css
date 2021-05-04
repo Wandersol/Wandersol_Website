@@ -25,6 +25,7 @@ body {
         "how-text"
         "mission-text"
         "newsletter"
+        "map"
         "footer"
 }
 
@@ -251,7 +252,9 @@ nav a {
     grid-template-rows: 1fr 1fr;
     padding: 3.125rem;
     height: 15rem;
-    background-color: #7B9E72;  
+    background-color: #7B9E72;
+    position: relative;
+    z-index: 1;  
 }
 
 #triple-join {
@@ -265,10 +268,25 @@ nav a {
     font-style: normal;
 }
 
-
 #newsletter p {
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+#map {
+    grid-area: map;
+    background-color: #FAF5CE;
+    height: 10rem;
+    padding-bottom: 20rem;
+}
+
+#map-lines {
+    grid-column: 1/13;
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 10rem;
 }
 
 /* ----- Footer ----- */
@@ -277,11 +295,12 @@ footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     background-color: #FAF5CE;
-    padding: 3.125rem;
-    height: 30rem;
+    /* padding: 0 3.125rem 0 3.125rem; */
+    /* height: 15rem; */
     font-size: 90%;
+    padding-bottom: 4rem;
 }
 
 footer a {
@@ -290,8 +309,8 @@ footer a {
 }
 
 #footer-contact {
-    grid-column: 1/4;
-    grid-row: 2/3;
+    grid-column: 2/4;
+    /* grid-row: 1/2; */
 }
 
 #footer-contact-title {
@@ -300,7 +319,7 @@ footer a {
 
 #footer-about {
     grid-column: 5/6;
-    grid-row: 2/3;
+    /* grid-row: 1/2; */
 }
 
 #about {
@@ -309,7 +328,7 @@ footer a {
 
 #footer-cust-serv {
     grid-column: 7/10;
-    grid-row: 2/3;
+    /* grid-row: 1/2; */
 }
 
 #cust-serv {
@@ -317,7 +336,7 @@ footer a {
 }
 #footer-social {
     grid-column: 10/12;
-    grid-row: 2/3;
+    /* grid-row: 1/2; */
 }
 
 #social {
@@ -325,8 +344,8 @@ footer a {
 }
 
 #back-to-top {
-    grid-column: 1/3;
-    grid-row: 3/4;
+    grid-column: 2/3;
+    /* grid-row: 2/3; */
 }
 
 /* --- Modal Styles ----- */
