@@ -340,7 +340,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    display: none;
 }
 
 .modal-content {
@@ -433,13 +433,14 @@ input {
     background: #FAF5CE;
 }
 
-#close {
+.close {
     position: absolute;
     top: 0;
     right: 1rem;
     font-size: 4rem;
     transform: rotate(45deg);
     color: #2D4826;
+    cursor: pointer;
 }
 
 #modal-image img{

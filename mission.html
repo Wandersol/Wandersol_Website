@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js" async></script>
         <title>Our Mission</title>
     </head>
     <body>
@@ -13,7 +14,7 @@
             <a href="products.html" id="nav-products">Products</a>
             <a href="mission.html" id="nav-mission">Mission</a>
             <a href="donate.html" id="nav-donate">Donate</a>
-            <a href="contact" id="nav-contact">Contact</a>  
+            <a href="#" id="nav-contact">Contact</a>  
         </nav>
 
        <div class="left">
@@ -63,5 +64,24 @@
             <div id="back-to-top"><a href="#top">Back to Top</a></div>
         </footer>
 
+        <!-- Modal Screen -->
+
+        <div class="bg-modal">
+            <div class="modal-content">
+                <div id="modal-form">
+                    <h3>Nice to Meet You!</h3>
+                    <p>Feel free to send us a message</p>
+                    <form action="">
+                        <input type="text" id="name" placeholder="Name">
+                        <input type="email" id="modal-email" placeholder="Email*">
+                        <input type="text" id="message" placeholder="Message">    
+                        <button type="submit" id="modal-submit">Submit</button>
+                    </form>
+                </div>
+                <div class="close">+</div>
+                <div id="modal-image"><img src="images/wandersol-modal.jpg" alt="mountains and pine trees"></div>
+            </div>
+        </div>
+        
     </body>
 </html>
