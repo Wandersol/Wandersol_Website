@@ -295,7 +295,29 @@ nav a {
     -webkit-text-stroke-color:#F4A41F;
 }
 
-#home-email {
+/* ******* NEWSLETTER INPUT EXPERIMENT **************** */
+#newsletter form {
+    grid-column: 5/8;
+    grid-row: 2/3;
+    position: relative;
+    bottom: 2rem;
+}
+
+#newsletter input {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #FAF5CE;
+    background-color: #7B9E72;
+    box-shadow: none;
+}
+
+#newsletter input::placeholder {
+    color: #FAF5CE;
+}
+/* ******************************************************* */
+
+/* #home-email {
     grid-column: 5/9;
     grid-row: 2/3;
     font-size: 1rem;
@@ -308,14 +330,14 @@ nav a {
 #home-email p {
     position: relative;
     top: 1rem;
-}
+} */
 
 #chevron-yellow-news {
     color: #FAF5CE;
     font-size: 2rem;
     display: inline;
     position: relative;
-    top: 0.5rem;
+    top: -2rem;
     padding-left: 10.5rem;
 }
 /* ----- Topographical Map Image ----- */
@@ -330,7 +352,7 @@ nav a {
 #map-lines {
     grid-column: 1/13;
     width: 100%;
-    height:auto;
+    height:400px;
     object-fit: cover;
     position: relative;
     bottom: 10rem;
@@ -553,7 +575,7 @@ input {
         line-height: 1.5rem;
         top: 1rem;
         padding-top: 2.5rem;
-        padding-left: 1.5rem;
+        padding-left: 1.75rem;
     }
 
     #newsletter p {
@@ -561,7 +583,14 @@ input {
         margin: 0;
     }
 
-    #home-email {
+    #newsletter form {
+        grid-column: 5/8;
+        bottom: 0;
+        top: 1rem;
+        padding-left: 1rem;
+    }
+
+    /* #home-email {
         top: -.5rem;
         height: 50%;
     }
@@ -569,32 +598,47 @@ input {
     #home-email p {
         position: relative;
         top: 1rem;
-    }
+    } */
     
     #chevron-yellow-news {
-        color: #FAF5CE;
+        /* color: #FAF5CE;
         font-size: 2rem;
         display: inline;
-        position: relative;
-        top: 0.5rem;
-        padding-left: 12rem;
+        position: relative; */
+        /* top: 0; */
+        bottom: 2rem;
+        padding-left: 100%;
+    }
+
+    #map-lines {
+        height: 400px;
     }
 
     #footer {
         height: 5rem;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
     }
 
-    #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
+    /* #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
         grid-row: 1/2;
-    }
+    } */
     
     #chevron-up {
         right: 3.5rem;
     }
 } 
+
+/* ----- Media Query ----- */
+/* ----- Inbetween Ipads ----- */
+@media only screen and (min-width: 866px) {
+    #triple-join {
+        grid-column: 4/10;
+        padding-left: 4rem;
+    }
+
+}
 
 /* ----- Media Query ----- */
 /* ----- Ipad Pro ----- */
@@ -609,21 +653,28 @@ input {
         top: 3.5rem;
     }
 
-    #home-email {
+    #newsletter form {
+        padding-left: 5rem; 
+    }
+
+    /* #home-email {
         grid-column: 5/8;
         margin-left: 3rem;
     }
 
    #home-email p {
        top: 2rem;
-   }
+   } */
 
     #chevron-yellow-news {
-         padding-left: 9rem;
-         top: 0.75rem;
+        grid-column: 9/10;
+        grid-row: 2/3;
+        padding-left: 100%;
+        top: -2rem;
     }
 
     #map-lines {
+        height: 600px;
         bottom: 20rem;
     }
 
@@ -645,6 +696,7 @@ input {
         "how-image how-text"
         "mission-image mission-text""
         "newsletter"
+        "map"
         "footer"
     }
 
@@ -733,44 +785,66 @@ input {
     #newsletter {
         grid-area: newsletter;
         height: 20rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-rows: 1fr; */
     }
 
     #triple-join {
-        grid-column: 2/3;
+        grid-column: 5/8;
         justify-content: center;
         padding: 0;
         margin: auto;
+        font-size: 2.75rem;
+        line-height: 2.5rem;
     }
 
-    #newsletter p {
+    /* #newsletter p {
         margin: auto;
+    } */
+
+    #newsletter form {
+        grid-column: 5/9;
+        padding-left: 3rem;
+        padding-top: 2rem;
     }
 
+    #chevron-yellow-news {
+        padding-left: 100%;
+    }
+
+    #map {
+        height: 600px;
+    }
     #map-lines {
+        height: 800px;
         bottom: 20rem;
     }
 
     footer {
         height: 30rem;
-        padding-top: 8rem;
+        padding-top: 0;
+        font-size: 1.5rem;
+        padding-bottom: 10rem;
     }
 
     #footer-contact, #footer-about, #footer-cust-serv, #footer-social {
         grid-row: 1/2;
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
 
     #back-to-top {
         grid-column: 2/4;
         grid-row: 2/3;
+        padding-bottom: 1rem;
     }
 
     #chevron-up {
-        grid-column: 3/4;
+        grid-column: 3/5;
         grid-row: 2/3;
+        position:relative;
+        left: 17rem;
+        top: 18.5rem;
     }
 
     #footer-contact {
