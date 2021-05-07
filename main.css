@@ -12,7 +12,7 @@ a {
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
     line-height: 1.3;
     display: grid;
@@ -80,6 +80,7 @@ nav a {
 #nav-contact {
     grid-column: 10/11; 
 }
+
 /* ----- Main Title Div with Main Title Image ----- */
 
 #main-title {
@@ -287,8 +288,8 @@ nav a {
 }
 
 .outline {
-    -webkit-text-fill-color: #7B9E72; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: #7B9E72; 
+    -webkit-text-stroke-width: 0.0625rem;
     -webkit-text-stroke-color:#F4A41F;
 }
 
@@ -305,10 +306,10 @@ nav a {
     width: 18rem;
     border: 0;
     border-radius: 0;
-    border-bottom: 2px solid #FAF5CE;
+    border-bottom: 0.125rem solid #FAF5CE;
     background-color: #7B9372;
     box-shadow: none;
-    color:papayawhip;
+    color: #FAF5CE;
 
 }
  #email {
@@ -344,7 +345,7 @@ input::placeholder {
 #map-lines {
     grid-column: 1/13;
     width: 100%;
-    height:400px;
+    height: 25rem;
     object-fit: cover;
     position: relative;
     bottom: 10rem;
@@ -414,13 +415,113 @@ footer a {
     width: 100%;
     height: 100%;
     background-color: rgba(123, 158, 114, 0.7);
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+.modal-content {
+    width: 28.125rem;
+    height: 50rem;
+    background-color: #FAF5CE;
+    -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26); 
+    box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#modal-form {
+    width: 20rem;
+    height: 40rem;
+    display: inline;
+}
+
+#form {
+    width:18rem;
+}
+
+#modal-form h3 {
+    display: block;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: #2D4826;
+    text-align:center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#modal-form p {
+    text-align: center;
+    color: #2D4826;
+    font-size: 1.25rem;
+    padding-bottom: 2rem;
+}
+
+input {
+    background-color: #FBF9E7;
+    width: 20rem;
+    border-radius: 0.1875rem;
+    border-style: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25); 
+    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
+}
+
+#name::placeholder, #modal-email::placeholder, #message::placeholder {
+    font-size: 0.8rem;
+    color: #7B9E72;
+}
+
+#name {
+    display: block;
+    margin-bottom: 3rem;
+    padding: 0.625rem;
+}
+
+#modal-email {
+    display: block;
+    margin-bottom: 3rem;
+    padding: 0.625rem;
+}
+
+#message {
+    display:block;
+    width: 20rem;
+    padding-top: 0.625rem;
+    padding-left: 0.625rem;
+    padding-bottom: 10rem;
+    resize: none;
+}
+
+#modal-submit {
+    font-weight: bold;
+    color: #FAF5CE !important;
+    font-size: 0.5rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem #DEDEDE;
+    padding: 0.625rem 1.5625rem;
+    background: #2D4826;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 20%;
+    width: 12rem;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 3rem;
+    transform: rotate(45deg);
+    color: #2D4826;
+    cursor: pointer;
 }
 
 #modal-image img {
@@ -489,7 +590,7 @@ footer a {
     }
 
     #map-lines {
-        height: 400px;
+        height: 25rem;
     }
 
     #footer {
@@ -502,128 +603,69 @@ footer a {
         right: 3.5rem;
     }
 
-    /* .sm-modal {
-        display: none;
-    } */
-
-    .bg-modal {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(123, 158, 114, 0.7);
-        /* position: absolute; */
-        position: fixed;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .sm-modal {
         display: none;
     }
     
     .modal-content {
-        width: 600px;
-        height: 400px;
-        background-color: #FAF5CE;
-        -webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26); 
-        box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26);
-        display: flex;
-        justify-content: center;
-        position: relative;
+        width: 37.5rem;
+        height: 25rem;
     }
     
     #modal-form {
-        width: 300px;
-        height: 400px;
+        width: 18.75rem;
+        height: 25rem;
         display: inline;
     }
-    
+
     #modal-form h3 {
-        display: block;
-        font-family: cubano, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5remrem;
-        color: #2D4826;
-        text-align:center;
-        padding-top: 2rem;
+        font-size: 1.75rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
     }
     
     #modal-form p {
-        text-align: center;
-        color: #2D4826;
+        font-size: 1rem;
+        padding-bottom: 0;
     }
     
     input {
-        background-color: FBF9E7;
         width: 15rem;
-        border-radius: 3px;
-        border-style: none;
-        box-sizing: border-box;
-        margin: 0 auto;
-        -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25); 
-        box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
     }
     
     #name {
-        display: block;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    
-    #name::placeholder, #modal-email::placeholder, #message::placeholder {
-        font-size: 0.8rem;
-        color: #7B9E72;
-    }
-    
-    #name, #modal-email, #message {
-        background-color: #FBF9E7;
+        margin-bottom: 0.625rem;
+        padding: 0.625rem;
     }
     
     #modal-email {
-        display: block;
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-bottom: 0.625rem;
+        padding: 0.625rem;
     }
     
     #message {
-        display:block;
         width: 15rem;
-        padding-top: 10px;
-        padding-left: 10px;
         padding-bottom: 5rem;
-        resize: none;
     }
     
     #modal-submit {
-        font-weight: bold;
-        color: #FAF5CE !important;
         font-size: 0.4rem;
-        box-shadow: 1px 1px 1px #DEDEDE;
-        padding: 10px 25px;
-        background: #2D4826;
-        display: block;
         margin: 1.5rem auto;
     }
-    
-    #modal-submit:hover {
-        color: #2D4826 !important;
-        background: #FAF5CE;
-    }
-    
+     
     .close {
-        position: absolute;
-        top: 0;
+        top: -1rem;
         right: 1rem;
         font-size: 4rem;
-        transform: rotate(45deg);
-        color: #2D4826;
-        cursor: pointer;
     }
     
     #modal-image img{
-        width: 300px;
-        height: 400px;
-        object-fit: cover;  
         display: inline;
+        width: 18.75rem;
+        height: 25rem;
+        object-fit: cover;   
     }
 
 } 
@@ -633,7 +675,7 @@ footer a {
 @media only screen and (min-width: 1024px) {
 
     #map-lines {
-        height: 600px;
+        height: 37.5rem;
         bottom: 20rem;
     }
 
@@ -641,129 +683,9 @@ footer a {
         height: 20rem;
         margin-top: 25rem;
     }
-/*
-    .bg-modal {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(123, 158, 114, 0.7);
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-    
-    .modal-content {
-        width: 600px;
-        height: 400px;
-        background-color: #FAF5CE;
-        -webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26); 
-        box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26);
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    
-    #modal-form {
-        width: 300px;
-        height: 400px;
-        display: inline;
-    }
-    
-    #modal-form h3 {
-        display: block;
-        font-family: cubano, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5remrem;
-        color: #2D4826;
-        text-align:center;
-        padding-top: 2rem;
-    }
-    
-    #modal-form p {
-        text-align: center;
-        color: #2D4826;
-    }
-    
-    input {
-        background-color: FBF9E7;
-        width: 15rem;
-        border-radius: 3px;
-        border-style: none;
-        box-sizing: border-box;
-        margin: 0 auto;
-        -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25); 
-        box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
-    }
-    
-    #name {
-        display: block;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    
-    #name::placeholder, #modal-email::placeholder, #message::placeholder {
-        font-size: 0.8rem;
-        color: #7B9E72;
-    }
-    
-    #name, #modal-email, #message {
-        background-color: #FBF9E7;
-    }
-    
-    #modal-email {
-        display: block;
-        margin-bottom: 10px;
-        padding: 10px;
-    }
-    
-    #message {
-        display:block;
-        width: 15rem;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-bottom: 5rem;
-        resize: none;
-    }
-    
-    #modal-submit {
-        font-weight: bold;
-        color: #FAF5CE !important;
-        font-size: 0.4rem;
-        box-shadow: 1px 1px 1px #DEDEDE;
-        padding: 10px 25px;
-        background: #2D4826;
-        display: block;
-        margin: 1.5rem auto;
-    }
-    
-    #modal-submit:hover {
-        color: #2D4826 !important;
-        background: #FAF5CE;
-    }
-    
-    .close {
-        position: absolute;
-        top: 0;
-        right: 1rem;
-        font-size: 4rem;
-        transform: rotate(45deg);
-        color: #2D4826;
-        cursor: pointer;
-    }
-    
-    #modal-image img{
-        width: 300px;
-        height: 400px;
-        object-fit: cover;  
-        display: inline;
-    }
 }
-*/
-/* -------------------------------- Media Query --------------------------------------- */
 
+/* -------------------------------- Media Query --------------------------------------- */
 /* ----- Desktop Styles ------ */
 @media only screen and (min-width:1350px) {
     body {
@@ -882,10 +804,10 @@ footer a {
     }
 
     #map {
-        height: 600px;
+        height: 37.5rem;
     }
     #map-lines {
-        height: 800px;
+        height: 50rem;
         bottom: 20rem;
     }
 
@@ -927,128 +849,12 @@ footer a {
         grid-column: 8/10;
     }
 
+    #modal-submit:hover {
+        color: #2D4826 !important;
+        background: #FAF5CE;
+    } 
 }
 
-/* --- Original Modal Styles ----- */
-/*
-.bg-modal {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(123, 158, 114, 0.7);
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none; 
-}
 
-.modal-content {
-    width: 200px;
-    height: 120px;
-    background-color: #FAF5CE;
-    -webkit-box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26); 
-    box-shadow: 7px 7px 10px 0px rgba(0,0,0,0.26);
-    display: flex;
-    justify-content: center;
-    position: relative;
-} 
 
-#modal-form {
-    width: 600px;
-    height: 600px;
-    display: inline;
-}
-
-#modal-form h3 {
-    display: block;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2rem;
-    color: #2D4826;
-    text-align:center;
-    padding-top: 2rem;
-}
-
-#modal-form p {
-    text-align: center;
-    color: #2D4826;
-}
-
-input {
-    background-color: FBF9E7;
-    width: 21.56rem;
-    border-radius: 3px;
-    border-style: none;
-    box-sizing: border-box;
-    margin: 0 auto;
-    -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25); 
-    box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.25);
-}
-
-#name {
-    display: block;
-    margin-bottom: 35px;
-    padding: 10px;
-}
-
-#name::placeholder, #modal-email::placeholder, #message::placeholder {
-    font-size: 0.8rem;
-    color: #7B9E72;
-}
-
-#name, #modal-email, #message {
-    background-color: #FBF9E7;
-}
-
-#modal-email {
-    display: block;
-    margin-bottom: 55px;
-    padding: 10px;
-}
-
-#message {
-    display:block;
-    width: 21.56rem;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10rem;
-    resize: none;
-}
-
-#modal-submit {
-    font-weight: bold;
-    color: #FAF5CE !important;
-    font-size: 0.4rem;
-    box-shadow: 1px 1px 1px #DEDEDE;
-    padding: 10px 25px;
-    background: #2D4826;
-    display: block;
-    margin: 1.5rem auto;
-}
-
-#modal-submit:hover {
-    color: #2D4826 !important;
-    background: #FAF5CE;
-}
-
-.close {
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    font-size: 4rem;
-    transform: rotate(45deg);
-    color: #2D4826;
-    cursor: pointer;
-}
-
-#modal-image img{
-    width: 500px;
-    height: 600px;
-    object-fit: cover;  
-    display: inline;
-} 
-*/
-}
 
