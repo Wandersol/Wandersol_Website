@@ -38,7 +38,6 @@ body {
     background-size: cover;
     height: 100rem;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr, 1fr, 1fr;
 }
 
@@ -85,11 +84,21 @@ nav a {
 
 #main-title {
     grid-column: 1/13;
-    background-image: url(images/wandersol-title.png);
+    /* background-image: url(images/wandersol-title.png); */
+    background-color: rgb(26,42,63,.5);
     background-repeat: no-repeat;
     background-position: center top;
-    height: auto;
+    /* background-size: contain; */
+    height: 15rem;
     padding: 0;
+}
+
+#main-title img {
+    width: 60%;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 25%;
 }
 
 /* ----- Description ----- */
@@ -568,6 +577,14 @@ input {
         height: 65rem;
     }
 
+    #main-title {
+        height: 40%;
+    }
+
+    #main-title img {
+        width: 50%;
+    }
+
     #desc-image, #how-image {
         height: 30rem;
     }
@@ -672,7 +689,19 @@ input {
 
 /* -------------------------------- Media Query --------------------------------------- */
 /* ----- Ipad Pro ----- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1000px) {
+    #hero {
+        height: 85.375rem;
+    }
+
+    #main-title {
+        height: 45%;
+    }
+
+    #main-title img {
+        width: 50%;
+        top: 30%;
+    }
 
     #map-lines {
         height: 37.5rem;
@@ -701,7 +730,16 @@ input {
     }
 
     #hero {
-        height: 67rem;
+        height: 65rem;
+    }
+
+    #main-title {
+        height: 60%;
+    }
+
+    #main-title img {
+        width: 40%;
+        padding-bottom: 20%;
     }
 
     #description {
