@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF5CE;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* ----- Navbar ----- */
+
+nav {
+    grid-column: 1/13;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+nav a {
+    color: #E9A642;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: -1rem;
+}
+
+#logo-home {
+    grid-column: 2/3;
+    color: #3b76a3;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nav-products {
+    grid-column: 4/5;
+}
+
+#nav-mission {
+    grid-column: 6/7;
+}
+
+#nav-donate {
+    grid-column: 8/9; 
+}
+
+#nav-contact {
+    grid-column: 10/11; 
+}
+
