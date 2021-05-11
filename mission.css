@@ -19,13 +19,23 @@ body {
     line-height: 1.3;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+        "nav"
+        "left"
+        "right"
+        "copy"
+        "counter"
+        "newsletter"
+        "map"
+        "footer";
 }
 
 /* ----- Navbar ----- */
 
 nav {
+    grid-area: nav;
     grid-column: 1/13;
-    grid-row: 1/2;
+    /* grid-row: 1/2; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 2rem;
@@ -66,3 +76,350 @@ nav a {
     grid-column: 10/11; 
 }
 
+.left {
+    grid-area: left;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.left h2 {
+    grid-column: 4/9;
+    margin: 0 auto 1rem auto;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2D4826;
+}
+
+.left h5 {
+    grid-column: 2/11;
+    margin: 0 auto 1rem auto;
+}
+
+.right {
+    grid-area: right;
+    grid-column: 1/13;
+    margin: 0 auto;
+}
+
+#mission-image {
+    max-width: 20rem;
+    max-height: auto;
+}
+
+#copy {
+    grid-area: copy;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    /* grid-row: 4/5; */
+}
+
+#copy p {
+    grid-column: 2/12;
+}
+
+#counter {
+    grid-area: counter;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+}
+
+#number {
+    grid-column: 3/10;
+    grid-row: 1/2;
+    font-size: 2rem;
+    margin: 0 auto 1rem auto;
+}
+
+#total {
+    grid-column: 2/11;
+    grid-row: 2/3;
+    font-size: 0.75rem;
+    margin: 0 auto; 
+}
+
+#modal-image {
+    display: none;
+}
+
+
+#newsletter {
+    grid-area: newsletter;
+    grid-column: 1/13;
+    height: 22rem;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 3.125rem;
+    background-color:#7B9372;
+    color: #FAF5CE;
+    z-index: 1;
+}
+
+#triple-join {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0 auto;
+}
+#newsletter p {
+    margin: 0 auto;
+    font-size: 3.75vw;
+    padding-top: 2.5rem;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .1rem;
+    line-height: 0.1rem;   
+}
+
+.outline {
+    -webkit-text-fill-color: #7B9E72; 
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color:#F4A41F;
+}
+
+#newsletter form {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding-top: 2rem;
+    /* padding-left: 0.75rem; */
+    padding-bottom: 2rem;
+}
+
+#newsletter input {
+    width: 8rem;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 0.125rem solid #FAF5CE;
+    background-color: #7B9372;
+    box-shadow: none;
+    color: #FAF5CE;
+
+}
+ #email {
+     display: inline-block;
+     min-width: 12rem;
+ }
+
+#chevron-yellow-news {
+    position: relative;
+    top: .5rem;
+    display: inline-block;
+    color:#FAF5CE;
+}
+
+input::placeholder {
+    color:#FAF5CE;
+    font-size: 90%;
+}
+
+#newsletter .material-icons {
+    font-size: 1.5rem;
+}
+
+/* ----- Topographical Map Image ----- */
+
+#map {
+    grid-area: map;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #FAF5CE;
+    height: 10rem;
+    padding-bottom: 20rem;
+}
+
+#map-lines {
+    grid-column: 1/13;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    position: relative;
+    bottom: 10rem;
+}
+
+/* ----- Footer ----- */
+
+footer {
+    grid-area: footer;
+    grid-column: 1/13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #FAF5CE;
+    font-size: 0.25rem;
+    padding-bottom: 3rem;
+}
+
+footer a {
+    color: #2D4826;
+}
+
+#footer-contact {
+    grid-column: 2/4;
+}
+
+#footer-contact-title {
+    color: #7B9E72;
+}
+
+#footer-email {
+    text-decoration: underline;
+}
+
+#footer-about {
+    grid-column: 5/6;
+    padding-left: 1.5rem;
+}
+
+#about {
+    color: #7B9E72;
+}
+
+#footer-cust-serv {
+    grid-column: 7/10;
+}
+
+#cust-serv {
+    color: #7B9E72;
+}
+#footer-social {
+    grid-column: 10/12;
+    padding-left: 1rem;
+}
+
+#social {
+    color: #7B9E72;
+}
+
+#back-to-top {
+    grid-column: 2/4;
+    text-decoration: underline;
+}
+
+#chevron-up {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    position:relative;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    color: #2D4826;
+    font-size: 1.5rem !important;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(123, 158, 114, 0.7);
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    width: 15rem;
+    height: 30rem;
+    background-color: #FAF5CE;
+    -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26); 
+    box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#modal-form {
+    width: 15rem;
+    height: 30rem;
+    display: inline;
+}
+
+#form {
+    width:13rem;
+}
+
+#modal-form h3 {
+    display: block;
+    font-family: cubano, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #2D4826;
+    text-align:center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#modal-form p {
+    text-align: center;
+    color: #2D4826;
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+}
+
+input {
+    background-color: #FBF9E7;
+    width: 13rem;
+    border-radius: 0.1875rem;
+    border-style: none;
+    box-sizing: border-box;
+    margin: 0 auto;
+    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25); 
+    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
+}
+
+#name::placeholder, #modal-email::placeholder, #message::placeholder {
+    font-size: 0.75rem;
+    color: #7B9E72;
+}
+
+#name {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.625rem;
+}
+
+#modal-email {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.625rem;
+}
+
+#message {
+    display:block;
+    width: 13rem;
+    padding-top: 0.625rem;
+    padding-left: 0.625rem;
+    padding-bottom: 8rem;
+    resize: none;
+}
+
+#modal-submit {
+    font-weight: bold;
+    color: #FAF5CE !important;
+    font-size: 0.5rem;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem #DEDEDE;
+    padding: 0.625rem 1.5625rem;
+    background: #2D4826;
+    display: block;
+    margin: 1rem auto;
+    width: 8rem;
+}
+
+.close {
+    /* Need to write JS for closing when tapping outside of #modal-content */
+    display: none;
+}
+
+#modal-image img {
+    display: none;
+}
