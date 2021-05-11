@@ -669,7 +669,7 @@ input {
 } 
 
 /* ----- Media Query ----- */
-/* ----- Inbetween Tablet and Desktop ----- */
+/* ----- Ipad Pro ----- */
 
 @media only screen and (min-width: 980px) {
     #wandersol-image {
@@ -677,7 +677,27 @@ input {
     }
 
     #additional-images {
-        grid-column: 5/6;
+        grid-column: 6/7;
+    }
+
+    #qty-add {
+        margin-left: 2.5rem;
+    }
+
+    #add-to-cart {
+        grid-column: 4/6;
+    }
+
+    #customer-reviews {
+        margin-top: 2rem;
+    }
+
+    #jeremy, #melanie {
+        padding-right: 3rem;
+    }
+
+    footer {
+        margin-left: 2rem;
     }
 }
 
