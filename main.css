@@ -402,6 +402,7 @@ footer a {
     justify-content: center;
     align-items: center;
     display: none;
+    z-index: 2;
 }
 
 .modal-content {

@@ -103,9 +103,10 @@ nav a {
     margin: 0 auto;
 }
 
-#mission-image {
-    max-width: 20rem;
-    max-height: auto;
+img {
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
 }
 
 #copy {
@@ -114,7 +115,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
-    /* grid-row: 4/5; */
+    font-size: 0.75rem;
 }
 
 #copy p {
@@ -134,7 +135,7 @@ nav a {
     grid-column: 3/10;
     grid-row: 1/2;
     font-size: 2rem;
-    margin: 0 auto 1rem auto;
+    margin: 1.25rem auto;
 }
 
 #total {
@@ -313,117 +314,6 @@ footer a {
     font-size: 1.5rem !important;
 }
 
-/* .bg-modal {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(123, 158, 114, 0.7);
-    position:fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.modal-content {
-    width: 15rem;
-    height: 30rem;
-    background-color: #FAF5CE;
-    -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26); 
-    box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26);
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-#modal-form {
-    width: 15rem;
-    height: 30rem;
-    display: inline;
-}
-
-#form {
-    width:13rem;
-}
-
-#modal-form h3 {
-    display: block;
-    font-family: cubano, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: #2D4826;
-    text-align:center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-#modal-form p {
-    text-align: center;
-    color: #2D4826;
-    font-size: 0.75rem;
-    padding-bottom: 1rem;
-}
-
-input {
-    background-color: #FBF9E7;
-    width: 13rem;
-    border-radius: 0.1875rem;
-    border-style: none;
-    box-sizing: border-box;
-    margin: 0 auto;
-    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25); 
-    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
-}
-
-#name::placeholder, #modal-email::placeholder, #message::placeholder {
-    font-size: 0.75rem;
-    color: #7B9E72;
-}
-
-#name {
-    display: block;
-    margin-bottom: 1rem;
-    padding: 0.625rem;
-}
-
-#modal-email {
-    display: block;
-    margin-bottom: 1rem;
-    padding: 0.625rem;
-}
-
-#message {
-    display:block;
-    width: 13rem;
-    padding-top: 0.625rem;
-    padding-left: 0.625rem;
-    padding-bottom: 8rem;
-    resize: none;
-}
-
-#modal-submit {
-    font-weight: bold;
-    color: #FAF5CE !important;
-    font-size: 0.5rem;
-    box-shadow: 0.0625rem 0.0625rem 0.0625rem #DEDEDE;
-    padding: 0.625rem 1.5625rem;
-    background: #2D4826;
-    display: block;
-    margin: 1rem auto;
-    width: 8rem;
-}
-
-.close {
-    /* Need to write JS for closing when tapping outside of #modal-content */
-    /* display: none;
-} 
-
-#modal-image img {
-    display: none;
-}  */
-
 .bg-modal {
     width: 100%;
     height: 100%;
@@ -435,6 +325,7 @@ input {
     justify-content: center;
     align-items: center;
     display: none;
+    z-index: 2;
 }
 
 .modal-content {
@@ -651,5 +542,67 @@ input {
 
     footer {
         font-size: 0.75rem;
+    }
+}
+
+/* ----- Media Query ----- */
+
+/* ----- Ipad Pro ----- */
+
+@media only screen and (min-width: 980px) {
+    body {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+        "nav"
+        "left right"
+        "copy right"
+        "counter"
+        "newsletter"
+        "map"
+        "footer";
+    }
+    
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    .left {
+        grid-area: left;
+        grid-column: 2/6;
+        grid-row: 2/3;
+    }
+
+    .left h2 {
+        grid-column: 1/13;
+        margin: 0 0 3rem;
+        padding: 0;
+        display: block;
+    }
+
+    .left h5 {
+        grid-column: 1/13;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .right {
+        grid-area: left;
+        grid-column: 7/12;
+        height: 24rem;
+    }
+
+    img {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    #copy {
+        grid-area: copy;
+        grid-column: 2/6;
+        grid-row: 2/3;
+        margin: 0;
+        padding: 0;
+        display: block;
     }
 }
