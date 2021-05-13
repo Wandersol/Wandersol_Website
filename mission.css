@@ -570,10 +570,6 @@ input {
     nav {
         margin-bottom: 2rem;
     }
-    
-    nav a {
-        font-size: 1.5rem;
-    }
 
     .left {
         grid-area: left;
@@ -649,14 +645,6 @@ input {
 
     nav {
         margin-bottom: 5rem;
-    }
-
-    nav a  {
-        font-size: 1.5rem;
-    }
-
-    #logo-home {
-        font-size: 2rem;
     }
 
     #copy p {

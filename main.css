@@ -690,7 +690,7 @@ input {
     }
 
     #desc-text p, #how-text p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #desc-image, #how-image, #mission-image {
@@ -701,7 +701,7 @@ input {
     }
 
     .read-more-light a, .read-more-dark a {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 
     #chevron-yellow {
@@ -725,7 +725,7 @@ input {
     }
 
     #mission-text p {
-        font-size: 1.35rem;
+        font-size: 1rem;
     }
 
     #map-lines {
@@ -735,7 +735,7 @@ input {
 
     footer {
         height: 20rem;
-        font-size: 1rem;
+        font-size: 0.75rem;
         padding-bottom: 5rem;
         padding-top: 2rem;
     }
@@ -890,7 +890,7 @@ input {
     footer {
         height: 30rem;
         padding-top: 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding-bottom: 10rem;
     }
 
