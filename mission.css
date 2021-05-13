@@ -95,6 +95,7 @@ nav a {
 .left h5 {
     grid-column: 3/11;
     margin: 0 auto 1rem auto;
+    color: #7B9E72;
 }
 
 .right {
@@ -431,6 +432,10 @@ input {
 /* ----- Tablet Styles ----- */
 
 @media only screen and (min-width: 680px) {
+    nav a {
+        font-size: 1rem;
+    }
+
     .left h2 {
         grid-column: 5/9;
         margin: 0 auto 1rem auto;
@@ -630,5 +635,35 @@ input {
     footer {
         font-size: 0.9rem;
         padding-bottom: 5rem;
+    }
+}
+
+/* ----- Media Query ----- */
+
+/* ----- Desktop Styles ----- */
+
+@media only screen and (min-width: 1100px) {
+    body  {
+        font-size: 1rem;
+    }
+
+    nav {
+        margin-bottom: 5rem;
+    }
+
+    nav a  {
+        font-size: 1.5rem;
+    }
+
+    #logo-home {
+        font-size: 2rem;
+    }
+
+    #copy p {
+        font-size: 1rem;
+    }
+
+    #counter {
+        margin: 10rem auto;
     }
 }
