@@ -35,7 +35,6 @@ body {
 nav {
     grid-area: nav;
     grid-column: 1/13;
-    /* grid-row: 1/2; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 4rem;
