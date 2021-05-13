@@ -22,10 +22,9 @@ body {
     grid-template-areas: 
         "nav"
         "donate"
+        "difference"
         "ways"
-        "way1"
-        "way2"
-        "way3"
+        "ways-cards" 
         "newsletter"
         "map"
         "footer"
@@ -79,7 +78,7 @@ nav a {
 /*-----Body----*/
 #donate{
     grid-area: donate;
-    grid-column: 5/7;
+    grid-column: 1/13;
     text-align:center;
     grid-row:2/5;
     padding-left:20%;
@@ -99,17 +98,48 @@ nav a {
     grid-row:3/5;
 }
 #difference{
-    grid-row:5/7;
-    grid-column:5/7;
+    grid-area: ways;
+    grid-row:5/6;
+    grid-column:1/13;
     text-align:center;
     padding-top:5%;
     padding-left:20%;
     padding-right:20%;
 }
-#difference h4{
+#difference h5{
     color:#3B76A2;
-    font-size:1rem;
+    font-size:0.75rem;
     font-family: 'Raleway', sans-serif;
+}
+
+#ways {
+    grid-area: ways-cards;
+    grid-column: 1/13;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.type_of_way {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+
+#pack {
+    display: block;
+    background-color: #E9A642;
+}
+
+#monetary {
+    
+    background-color: #3b76a3;
+}
+
+#volunteer {
+    
+    background-color: #E2838A;
 }
 
 /* ----- Newsletter ----- */
