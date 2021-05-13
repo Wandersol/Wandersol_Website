@@ -31,7 +31,7 @@ nav {
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
 }
 
@@ -724,7 +724,9 @@ input {
 /* ----- Desktop Styles ----- */
 
 @media only screen and (min-width: 1350px) {
-
+    nav {
+        margin-left: -1rem;
+    }
     #additional-images {
         grid-column: 6/7;
     }
