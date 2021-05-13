@@ -1,7 +1,6 @@
 //Recognizes when user clicks "Contact" and opens window
 document.getElementById('nav-contact').addEventListener('click', function() {
-    document.querySelector('.bg-modal').style.display = 'flex';
-    
+    document.querySelector('.bg-modal').style.display = 'flex';   
 });
 
 //Closes window when "x" is clicked
