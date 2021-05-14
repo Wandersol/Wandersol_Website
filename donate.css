@@ -102,7 +102,7 @@ nav a {
     grid-row:5/6;
     grid-column:1/13;
     text-align:center;
-    padding-top:5%;
+    padding-top:4%;
     padding-left:20%;
     padding-right:20%;
 }
@@ -115,6 +115,7 @@ nav a {
 #ways {
     grid-area: ways-cards;
     grid-column: 1/13;
+    padding-top:5%;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -129,12 +130,30 @@ nav a {
     text-align: center;
     line-height: 10rem;
 }
-
+/*--left and right arrows on the sides on ways to make difference--*/
+.arrow{
+    border:solid #3B76A2;
+    border-width: 0 3px 3px 0;
+    display:inline-block;
+    padding:9px;
+}
+.left{
+    transform: rotate(135deg);
+    -webkit-transform:rotate(135deg);
+}
+.right{
+    transform:rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
 #pack {
     display: block;
     background-color: #E9A642;
 }
-
+#pack:hover, #monetary:hover, #volunteer:hover{
+    background-color:dimgrey;
+    font-size:2rem;
+    color:#E9A642;
+}
 #monetary {
     
     background-color: #3b76a3;
@@ -427,7 +446,7 @@ input {
 /* ----- Media Query ----- */
 
 /* ----- Tablet Styles ----- */
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 680px){
     nav a {
         font-size: 1rem;
     }
@@ -445,7 +464,7 @@ input {
     #difference h5 {
         font-size: 1rem;
     }
-
+   
     #ways {
         display: flex;
         justify-content: center;
@@ -533,7 +552,12 @@ input {
     }
     
 }
-
+/*--Ipad and Ipad Pro--*/
+@media only screen and (min-width:721px) and (max-width:1349px){
+    #difference{
+        padding-top:12%;
+    }
+}
 /* ----- Media Query ----- */
 
 /* ----- Ipad Pro ----- */
@@ -602,7 +626,7 @@ input {
     }
 
     #difference {
-        padding-top: 0;
+        /*padding-top: 0;*/
         margin-top: 3rem;
     }
 
@@ -613,5 +637,14 @@ input {
     #newsletter p {
         /* Note: 'vw' stands for view-port-width */
         font-size: 2.5vw; 
+    }
+}
+/*---mobile-----*/
+@media only screen and (max-width:720px){
+    .arrow{
+        padding:6px;
+    }
+    #difference{
+        padding-top:12%;
     }
 }
