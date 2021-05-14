@@ -875,10 +875,7 @@ input {
     #email::placeholder {
         font-size: 100%;
     }
-
-    /* #map {
-        height: 25rem;
-    } */
+    
     #map-lines {
         height: 25rem;
         bottom: 10rem;
