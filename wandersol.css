@@ -724,6 +724,9 @@ input {
 /* ----- Desktop Styles ----- */
 
 @media only screen and (min-width: 1350px) {
+    body {
+        padding: 0 8rem;
+    }
     nav {
         margin-left: -1rem;
     }
@@ -737,8 +740,147 @@ input {
         margin-left: -75%;
     }
 
-    #wandersol-image {
+    /* #wandersol-image {
         grid-column: 2/4;
+    } */
+
+    #wandersol-image {
+        background-color: #E9A642;
+        grid-column: 2/8;
+        grid-row: 2/7;
+        width: 40rem;
+        height: 48rem; 
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        margin-bottom: 1rem;
+    }
+
+    #wandersol-title-large {
+        grid-column: 8/12;
+        margin-left: 8rem;
+        grid-row: 2/3;
+        font-family: cubano, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        color: #2D4826;
+        margin-bottom: 1rem;
+    }
+
+    #price {
+        grid-column: 8/12;
+        margin-left: 8rem;
+        grid-row: 3/4;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        font-size: 1.25rem;
+    }
+    
+    #review-stats {
+        grid-column: 8/13;
+        margin-left: 8rem;
+        grid-row: 4/5;
+        font-size: 0.75rem;
+    }
+    
+    #large-review-stars {
+        width: 6rem;
+    }
+    
+    #review-stats p {
+        grid-column: 9/11;
+        display: inline;
+        margin-left: 1rem;
+    }
+    
+    #lengthy-description {
+        grid-column: 8/13;
+        margin-left: 8rem;
+        grid-row: 5/6;
+        font-size: 1rem;
+    }
+    
+    .dropdown {
+        grid-column: 8/12;
+        margin-left: 8rem;
+        grid-row: 6/7;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropbtn {
+        background-color: #2D4826;
+        color:#FAF5CE;
+        padding: 5px 15px;
+        font-size: 0.125rem;
+        font-weight: bold;
+        cursor: pointer;
+        width: 6.25rem;
+        height: 2rem;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #FAF5CE;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #FAF5CE;
+        color: #2D4826;
+    }
+    
+    #add-to-cart {
+        grid-column: 9/12;
+        grid-row: 6/7;
+        width: 6.25rem;
+        height: 2rem;
+        font-weight: bold;
+        color: #FAF5CE !important;
+        font-size: 0.125rem;
+        box-shadow: 1px 1px 1px #DEDEDE;
+        padding: 5px 15px;
+        background: #2D4826;
+        display: inline-block;
+    }
+    
+    #add-to-cart:hover {
+        color: #2D4826 !important;
+        background: #FAF5CE;
+    }
+    
+    #additional-images {
+        grid-column: 2/9;
+        grid-row: 7/8;
+    }
+    
+    .addtl-class {
+        width: 8rem;
+        height: 8rem;
+        margin-bottom: 0.5rem;
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 1rem;
     }
 
     .card {
@@ -758,18 +900,6 @@ input {
 }
 
 @media only screen and (min-width: 1675px) {
-    #additional-images {
-        margin-left: -5rem;
-    }
-
-    #lengthy-description {
-        grid-column: 2/9;
-    }
-
-    #add-to-cart {
-        grid-column: 3/5;
-    }
-
     #jeremy {
         grid-column: 2/5;
     }
