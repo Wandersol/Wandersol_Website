@@ -93,11 +93,9 @@ nav a {
 
 #main-title {
     grid-column: 1/13;
-    /* background-image: url(images/wandersol-title.png); */
     background-color: rgb(26,42,63,.5);
     background-repeat: no-repeat;
     background-position: center top;
-    /* background-size: contain; */
     height: 15rem;
     padding: 0;
 }
@@ -159,7 +157,6 @@ nav a {
 
 #how {
     background-color: #7B9E72;
-    /* padding: 2rem; */
     height: 51rem;
     font-family: cubano, sans-serif;
     font-weight: 400;
@@ -270,7 +267,6 @@ nav a {
     grid-row: 2/3;
     margin: 0 auto;
     padding-top: 2rem;
-    /* padding-left: 0.75rem; */
     padding-bottom: 2rem;
 }
 
@@ -548,7 +544,6 @@ input {
     #mission {
         padding: 0;
         margin: 0;
-        /* padding-top: 0; */
     }
 
     #mission-image {
@@ -690,7 +685,6 @@ input {
     }
 
     #desc-image, #how-image, #mission-image {
-        /* width: 36.75rem; */
         width: 31rem;
         height: 46.5rem;
         margin-top: 8rem;

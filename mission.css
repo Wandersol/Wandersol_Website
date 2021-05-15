@@ -146,11 +146,6 @@ img {
     margin: 0 auto; 
 }
 
-#modal-image img {
-    display: none;
-}
-
-
 #newsletter {
     grid-area: newsletter;
     grid-column: 1/13;
@@ -191,7 +186,6 @@ img {
     grid-row: 2/3;
     margin: 0 auto;
     padding-top: 2rem;
-    /* padding-left: 0.75rem; */
     padding-bottom: 2rem;
 }
 
@@ -427,7 +421,7 @@ input {
     display: none;
 }
 
-/* ----- Media Query ----- */
+/* --------------------------------- Media Query --------------------------------------------- */
 
 /* ----- Tablet Styles ----- */
 
@@ -437,18 +431,11 @@ input {
     }
 
     .left h2 {
-        grid-column: 5/9;
-        margin: 0 auto 1rem auto;
-        font-family: cubano, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #2D4826;
         font-size: 300%;
     }
     
     .left h5 {
         grid-column: 2/12;
-        margin: 0 auto 1rem auto;
         font-size: 125%;
     }
 
@@ -550,7 +537,7 @@ input {
     }
 }
 
-/* ----- Media Query ----- */
+/* ----------------------------------------- Media Query ------------------------------------ */
 
 /* ----- Ipad Pro ----- */
 
@@ -597,7 +584,6 @@ input {
     }
 
     .right {
-        grid-area: right;
         grid-column: 7/12;
         grid-row: 2/4;
         height: 24rem;
@@ -618,8 +604,6 @@ input {
     }
 
     #counter {
-        grid-area: counter;
-        grid-column: 1/13;
         grid-row: 4/5;
         margin-top: 2rem;
     }
@@ -634,7 +618,7 @@ input {
     }
 }
 
-/* ----- Media Query ----- */
+/* ------------------------------------- Media Query ----------------------------------------- */
 
 /* ----- Desktop Styles ----- */
 
@@ -645,10 +629,6 @@ input {
 
     nav {
         margin-bottom: 5rem;
-    }
-
-    #copy p {
-        font-size: 1rem;
     }
 
     #counter {

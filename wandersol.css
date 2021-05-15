@@ -13,15 +13,12 @@ a {
 
 body {
     margin: 0;
-    /* padding: 1rem; */
     background-color: #FAF5CE;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     line-height: 1.3;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* grid-template-rows: repeat(15, 1fr); */
-    /* grid-gap: 1.125rem; */
 }
 
 /* ----- Navbar ----- */
@@ -62,11 +59,11 @@ nav a {
 }
 
 #nav-donate {
-    grid-column: 8/9; 
+    grid-column: 8/9;
 }
 
 #nav-contact {
-    grid-column: 10/11; 
+    grid-column: 10/11;
 }
 
 /* ----- Main Image, Title, Additional Images, Info ----- */
@@ -87,8 +84,8 @@ nav a {
     grid-column: 2/8;
     grid-row: 3/4;
     width: 10.625rem;
-    height: 12.5rem; 
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+    height: 12.5rem;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     margin-bottom: 1rem;
 }
@@ -108,7 +105,7 @@ nav a {
     width: 2rem;
     height: 2rem;
     margin-bottom: 0.5rem;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
@@ -147,22 +144,11 @@ nav a {
 /* --- Dropdown Quantity Button ----- */
 /* ----- main code from: https://www.w3schools.com/css/css_dropdowns.asp -----*/
 
-/* #qty-add {
-    grid-column: 1/13;
-    grid-row: 8/9;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100%;
-    font-size: 0.125rem;
-    margin-left: 1rem;
-} */
-
 .dropdown {
     grid-column: 2/5;
     grid-row: 8/9;
     position: relative;
     display: inline-block;
-    /* margin-left: 1rem; */
 }
 
 
@@ -277,7 +263,7 @@ nav a {
     width: 4rem;
     height: 4rem;
     margin: 0;
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
@@ -314,7 +300,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
-    /* margin-left: 1rem; */
     padding-bottom: 3rem;
 }
 
@@ -373,8 +358,7 @@ label {
     grid-column: 1/6;
     grid-row: 3/4;
     padding-top: 0.375rem;
-    /* padding-left: 0.5rem; */
-    color: #2D4826; 
+    color: #2D4826;
 }
 
 #email {
@@ -386,8 +370,8 @@ label {
     border: none;
     font-size: 0.2rem;
     color: #bfd1bc;
-    -webkit-box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25); 
-    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25); 
+    -webkit-box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: inset 0px 2px 4px 0px rgba(0,0,0,0.25);
 }
 
 #email::placeholder {
@@ -423,7 +407,7 @@ footer img {
     width: 15rem;
     height: 30rem;
     background-color: #FAF5CE;
-    -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26); 
+    -webkit-box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26);
     box-shadow: 0.4375rem 0.4375rem 0.625rem 0rem rgba(0,0,0,0.26);
     display: flex;
     justify-content: center;
@@ -466,7 +450,7 @@ input {
     border-style: none;
     box-sizing: border-box;
     margin: 0 auto;
-    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25); 
+    -webkit-box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
     box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0,0,0,0.25);
 }
 
@@ -517,7 +501,7 @@ input {
     display: none;
 }
 
-/* ----- Media Query ----- */
+/* --------------------------------- Media Query ---------------------------------------------- */
 
 /* ----- Surafce Duo ----- */
 
@@ -535,7 +519,7 @@ input {
     }
 }
 
-/* ----- Media Query ----- */
+/* ------------------------------------------ Media Query ------------------------------------- */
 
 /* ----- Tablet Styles ----- */
 
@@ -585,7 +569,7 @@ input {
     #add-to-cart {
         grid-column: 4/6;
     }
-    
+
 
     #review-stats {
         line-height: .5;
@@ -632,7 +616,7 @@ input {
         width: 37.5rem;
         height: 25rem;
     }
-    
+
     #modal-form {
         width: 18.75rem;
         height: 25rem;
@@ -646,36 +630,36 @@ input {
         margin-bottom: 1rem;
         margin-top: 1.5rem;
     }
-    
+
     #modal-form p {
         font-size: 1rem;
         padding-bottom: 0;
     }
-    
+
     input {
         width: 15rem;
     }
-    
+
     #name {
         margin-bottom: 0.625rem;
         padding: 0.625rem;
     }
-    
+
     #modal-email {
         margin-bottom: 0.625rem;
         padding: 0.625rem;
     }
-    
+
     #message {
         width: 15rem;
         padding-bottom: 5rem;
     }
-    
+
     #modal-submit {
         font-size: 0.4rem;
         margin: 1.5rem auto;
     }
-     
+
     .close {
         display: block;
         top: -1rem;
@@ -686,16 +670,16 @@ input {
         color: #2D4826;
         cursor: pointer;
     }
-    
+
     #modal-image img{
         display: inline;
         width: 18.75rem;
         height: 25rem;
-        object-fit: cover;   
+        object-fit: cover;
     }
-} 
+}
 
-/* ----- Media Query ----- */
+/* --------------------------------------- Media Query --------------------------------------- */
 /* ----- Ipad Pro ----- */
 
 @media only screen and (min-width: 980px) {
@@ -707,10 +691,6 @@ input {
         grid-column: 6/7;
     }
 
-    #add-to-cart {
-        grid-column: 4/6;
-    }
-
     #customer-reviews {
         margin-top: 2rem;
     }
@@ -720,18 +700,16 @@ input {
     }
 }
 
-/* ----- Media Query ----- */
+/* ----------------------------------------- Media Query ------------------------------------- */
 /* ----- Desktop Styles ----- */
 
 @media only screen and (min-width: 1350px) {
     body {
         padding: 0 8rem;
     }
+
     nav {
         margin-left: -1rem;
-    }
-    #additional-images {
-        grid-column: 6/7;
     }
 
     .addtl-class {
@@ -740,144 +718,82 @@ input {
         margin-left: -75%;
     }
 
-    /* #wandersol-image {
-        grid-column: 2/4;
-    } */
-
     #wandersol-image {
-        background-color: #E9A642;
         grid-column: 2/8;
         grid-row: 2/7;
         width: 40rem;
-        height: 48rem; 
-        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
-        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-        margin-bottom: 1rem;
+        height: 48rem;
     }
 
     #wandersol-title-large {
         grid-column: 8/12;
-        margin-left: 8rem;
         grid-row: 2/3;
-        font-family: cubano, sans-serif;
-        font-weight: 400;
-        font-style: normal;
         font-size: 3rem;
-        color: #2D4826;
-        margin-bottom: 1rem;
+        margin-left: 8rem;
     }
 
     #price {
         grid-column: 8/12;
-        margin-left: 8rem;
         grid-row: 3/4;
-        margin-bottom: 1rem;
         margin-top: 0;
+        margin-left: 8rem;
         font-size: 1.25rem;
     }
-    
+
     #review-stats {
         grid-column: 8/13;
         margin-left: 8rem;
         grid-row: 4/5;
         font-size: 0.75rem;
     }
-    
+
     #large-review-stars {
         width: 6rem;
     }
-    
+
     #review-stats p {
         grid-column: 9/11;
         display: inline;
         margin-left: 1rem;
     }
-    
+
     #lengthy-description {
         grid-column: 8/13;
         margin-left: 8rem;
         grid-row: 5/6;
-        font-size: 1rem;
     }
-    
+
     .dropdown {
         grid-column: 8/12;
         margin-left: 8rem;
         grid-row: 6/7;
-        position: relative;
-        display: inline-block;
     }
-    
+
     .dropbtn {
-        background-color: #2D4826;
-        color:#FAF5CE;
-        padding: 5px 15px;
-        font-size: 0.125rem;
-        font-weight: bold;
-        cursor: pointer;
         width: 6.25rem;
         height: 2rem;
     }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown-content a:hover {
-        background-color: #FAF5CE;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    
+
     .dropdown:hover .dropbtn {
         background-color: #FAF5CE;
         color: #2D4826;
     }
-    
+
     #add-to-cart {
         grid-column: 9/12;
         grid-row: 6/7;
-        width: 6.25rem;
         height: 2rem;
-        font-weight: bold;
-        color: #FAF5CE !important;
-        font-size: 0.125rem;
-        box-shadow: 1px 1px 1px #DEDEDE;
-        padding: 5px 15px;
-        background: #2D4826;
         display: inline-block;
     }
-    
-    #add-to-cart:hover {
-        color: #2D4826 !important;
-        background: #FAF5CE;
-    }
-    
+
     #additional-images {
         grid-column: 2/9;
         grid-row: 7/8;
     }
-    
+
     .addtl-class {
         width: 8rem;
         height: 8rem;
-        margin-bottom: 0.5rem;
-        -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25); 
-        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
         display: inline-block;
         margin-left: 0;
         margin-right: 1rem;
@@ -895,7 +811,7 @@ input {
     footer img {
         grid-column: 3/4;
         margin-left: -2.5rem;
-        
+
     }
 }
 
@@ -906,14 +822,6 @@ input {
 
     #melanie {
         grid-column: 7/10;
-    }
-
-    #customer-reviews {
-        grid-column: 2/12;
-    }
-
-    #may-also-like {
-        grid-column: 2/12;
     }
 
     footer {
