@@ -778,14 +778,14 @@ input {
         grid-template-rows: 100%;
         margin: 0;
         padding: 0;
-        height: 67rem;
+        height: 56.25rem;
     }
 
     #desc-image {
         grid-column: 2/6;
         grid-row: 1/2;
         width: 35rem;
-        height: 52rem;
+        height: 38.25rem;
         background-color: #e2838a;
         padding: 0;
         margin: 8rem 0rem 0rem 0rem;       
@@ -809,13 +809,13 @@ input {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 100%;
         margin: 0;
-        height: 67rem;
+        height: 56.25rem;
     }
 
     #how-text {
         grid-column: 2/6;
         grid-row: 1/2;
-        padding: 20rem 0rem 0rem 0rem;
+        padding: 15rem 0rem 0rem 0rem;
     }
 
     #how-image{
@@ -823,7 +823,7 @@ input {
         grid-row: 1/2;
         background-color: #3b76a3;
         width: 35rem;
-        height: 52rem;
+        height: 38.25rem;
         padding: 0;
         margin: 8rem 0rem 0rem 1rem; 
     }
@@ -833,7 +833,7 @@ input {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 100%;
-        height: 67rem;
+        height: 56.25rem;
         margin: 0;
         padding: 0;
     }
@@ -847,8 +847,9 @@ input {
 
     #mission-image img {
         display: block;
-        max-width: 36.75rem;
-        max-height:46.5rem;
+        object-fit: cover;
+        width: 35rem;
+        height: 38.25rem;
         margin-top: 0;
         padding: 0;
         margin-left: 0 !important;
