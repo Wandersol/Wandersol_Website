@@ -13,7 +13,9 @@ a {
 
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     line-height: 1.3;
     display: grid;
     grid-template-columns: repeat(12 1fr);
@@ -130,7 +132,9 @@ nav a {
     color: #1A2A3F;
     padding: 0 3rem 0 3rem;
     grid-area: desc-text;
-    font-family: 'Raleway', sans-serif;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #desc-text h3 {
@@ -175,9 +179,11 @@ nav a {
 #how-text {
     grid-area: how-text;
     padding: 0 3rem 0 3rem;
-    font-family: 'Raleway', sans-serif;
     color: #162A41;
     font-size: 0.8rem;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #how-text h3 {
@@ -219,7 +225,9 @@ nav a {
 #mission-text {
     grid-area: mission-text;
     padding-top: 3rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #mission-text h3 {
@@ -295,6 +303,9 @@ nav a {
 input::placeholder {
     color:#FAF5CE;
     font-size: 90%;
+    font-family: filson-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #newsletter .material-icons {
