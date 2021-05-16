@@ -136,16 +136,17 @@ img {
 #number {
     grid-column: 3/10;
     grid-row: 1/2;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: 1.25rem auto;
-    font-weight: bold;
+    font-family: filson-pro, sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 #total {
-    grid-column: 2/11;
+    grid-column: 1/13;
     grid-row: 2/3;
-    font-size: 0.75rem;
-    margin: 0 auto; 
+    font-size: 0.65rem;
 }
 
 #newsletter {
@@ -415,8 +416,13 @@ input {
 }
 
 .close {
-    /* Need to write JS for closing when tapping outside of #modal-content */
-    display: none;
+    display: block;
+    right: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    transform: rotate(45deg);
+    color: #2D4826;
+    cursor: pointer;
 }
 
 #modal-image img {

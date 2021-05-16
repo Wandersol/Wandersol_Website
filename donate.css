@@ -441,8 +441,13 @@ input {
 }
 
 .close {
-    /* Need to write JS for closing when tapping outside of #modal-content */
-    display: none;
+    display: block;
+    right: 1rem;
+    font-size: 2rem;
+    position: absolute;
+    transform: rotate(45deg);
+    color: #2D4826;
+    cursor: pointer;
 }
 
 #modal-image img {
