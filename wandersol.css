@@ -167,14 +167,14 @@ nav a {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 6rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px 10px;
     text-decoration: none;
     display: block;
 }
@@ -262,11 +262,15 @@ nav a {
 }
 
 .card {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     margin: 0;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    font-size: 0.125rem;
+    color: #2D4826;
+    text-align: center;
+    line-height: 5rem;
 }
 
 #power-bank {
@@ -554,8 +558,8 @@ input {
     }
 
     .addtl-class {
-        width: 6rem;
-        height: 6rem;
+        width: 4rem;
+        height: 4rem;
         margin-left: 2rem;
     }
 
@@ -598,6 +602,8 @@ input {
     .card {
         width: 10rem;
         height: 10rem;
+        font-size: 0.75rem;
+        line-height: 10rem;
     }
 
     footer {
@@ -705,6 +711,16 @@ input {
     #jeremy, #melanie {
         padding-right: 3rem;
     }
+
+    footer #email {
+        grid-column:3/4;
+        padding-left: 0;
+    }
+
+    footer img {
+        grid-column: 4/5;
+        padding-left: 0.5rem;
+    }
 }
 
 /* ----------------------------------------- Media Query ------------------------------------- */
@@ -719,17 +735,18 @@ input {
         margin-left: -1rem;
     }
 
-    .addtl-class {
+    /* .addtl-class {
         width: 6rem;
         height: 6rem;
         margin-left: -75%;
-    }
+    } */
 
     #wandersol-image {
         grid-column: 2/8;
         grid-row: 2/7;
-        width: 40rem;
-        height: 48rem;
+        width: 30rem;
+        height: 38rem;
+        margin-top: 3rem;
     }
 
     #wandersol-title-large {
@@ -737,6 +754,7 @@ input {
         grid-row: 2/3;
         font-size: 3rem;
         margin-left: 8rem;
+        margin-top: 2rem;
     }
 
     #price {
@@ -771,7 +789,7 @@ input {
     }
 
     .dropdown {
-        grid-column: 8/12;
+        grid-column: 8/9;
         margin-left: 8rem;
         grid-row: 6/7;
     }
@@ -791,6 +809,7 @@ input {
         grid-row: 6/7;
         height: 2rem;
         display: inline-block;
+        margin-left: 3rem;
     }
 
     #additional-images {
@@ -799,8 +818,8 @@ input {
     }
 
     .addtl-class {
-        width: 8rem;
-        height: 8rem;
+        width: 5rem;
+        height: 5rem;
         display: inline-block;
         margin-left: 0;
         margin-right: 1rem;
@@ -809,17 +828,33 @@ input {
     .card {
         width: 15rem;
         height: 15rem;
+        line-height: 15rem;
+        font-size: 1rem;
     }
 
     #email {
         grid-column: 2/3;
     }
 
-    footer img {
-        grid-column: 3/4;
-        margin-left: -2.5rem;
-
+    footer {
+        font-size: 0.9rem;
     }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    footer #email {
+        grid-column:3/4;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    footer img {
+        grid-column: 4/5;
+        padding-left: 0;
+        margin-left: .5rem;
+    } 
 }
 
 @media only screen and (min-width: 1675px) {
@@ -840,6 +875,6 @@ input {
     }
 
     footer img {
-        grid-column: 3/4;
+        grid-column: 4/5;
     }
 }
