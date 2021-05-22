@@ -55,7 +55,7 @@ nav a {
 
 #logo-home {
     grid-column: 2/3;
-    color: #3b76a3;
+    color: #E9A642;
     padding-left: 1rem;
     font-family: cubano, sans-serif;
     font-weight: 400;
@@ -630,6 +630,10 @@ input {
 @media only screen and (min-width: 1350px) {
     nav {
         padding-bottom: 2rem;
+    }
+
+    nav a {
+        font-size: 1.5rem;
     }
 
     #donate {
