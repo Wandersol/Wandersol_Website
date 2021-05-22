@@ -102,7 +102,8 @@ nav a {
     background-color: rgba(26,42,63,.5);
     background-repeat: no-repeat;
     background-position: center top;
-    height: 15rem;
+    /* height: 15rem; */
+    height: 100%;
     padding: 0;
 }
 
@@ -111,7 +112,7 @@ nav a {
     margin: auto;
     display: block;
     position: relative;
-    top: 25%;
+    /* top: 25%; */
 }
 
 #description {
@@ -547,7 +548,8 @@ input {
     }
 
     #main-title {
-        height: 40%;
+        /* height: 40%; */
+        height: 100%;
     }
 
     #main-title img {
@@ -699,12 +701,13 @@ input {
     }
 
     #main-title {
-        height: 45%;
+        /* height: 45%; */
+        height: 100%;
     }
 
     #main-title img {
         width: 50%;
-        top: 30%;
+        /* top: 30%; */
     }
 
     #description, #how, #mission {
@@ -798,6 +801,7 @@ input {
     #main-title img {
         width: 40%;
         padding-bottom: 20%;
+        top: 30%;
     }
 
     #description {
