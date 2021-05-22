@@ -46,7 +46,7 @@ nav a {
 
 #logo-home {
     grid-column: 2/3;
-    color: #3b76a3;
+    color: #E9A642;
     font-family: cubano, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -90,6 +90,10 @@ nav a {
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     margin-bottom: 1rem;
+    color: #2D4826;
+    font-size: 0.75rem;
+    text-align: center;
+    /* line-height: 12.5rem; */
 }
 
 #price {
@@ -109,6 +113,10 @@ nav a {
     margin-bottom: 0.5rem;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #2D4826;
+    font-size: 0.0625rem;
+    text-align: center;
+    line-height: 2rem;
 }
 
 #addtl1 {
@@ -735,11 +743,12 @@ input {
         margin-left: -1rem;
     }
 
-    /* .addtl-class {
-        width: 6rem;
-        height: 6rem;
-        margin-left: -75%;
-    } */
+    #additional-images {
+        grid-column: 2/8;
+        grid-row: 6/7;
+        margin-top: -3rem;
+        padding-top: 0;
+    }
 
     #wandersol-image {
         grid-column: 2/8;
@@ -812,10 +821,10 @@ input {
         margin-left: 3rem;
     }
 
-    #additional-images {
+    /* #additional-images {
         grid-column: 2/9;
         grid-row: 7/8;
-    }
+    } */
 
     .addtl-class {
         width: 5rem;
@@ -855,6 +864,21 @@ input {
         padding-left: 0;
         margin-left: .5rem;
     } 
+}
+
+@media only screen and (min-width: 1455px) {
+    #additional-images {  
+        grid-row: 7/8;
+        margin-top: 0;    
+    }
+
+    #wandersol-title-large, #price, #review-stats, #lengthy-description, .dropdown {
+        margin-left: 1rem;
+    }
+
+    #add-to-cart {
+        margin-left: -5rem;
+    }
 }
 
 @media only screen and (min-width: 1675px) {
