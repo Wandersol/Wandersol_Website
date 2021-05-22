@@ -25,8 +25,9 @@ body {
         "desc-text"
         "how-image"
         "how-text"
-        "mission-image"
-        "mission-text"
+        /* "mission-image"
+        "mission-text" */
+        "cream-background"
         "newsletter"
         "map"
         "footer"
@@ -55,6 +56,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 4rem;
+    background-color:rgba(26,43,62, 0.5);
 }
 
 nav a {
@@ -70,7 +72,7 @@ nav a {
 
 #logo-home {
     grid-column: 2/3;
-    color: #3b76a3;
+    color: #E9A642;
     /* color: rgb(26,42,63); */
     font-family: cubano, sans-serif;
     font-weight: 400;
@@ -194,6 +196,11 @@ nav a {
     font-style: normal;
 }
 
+#cream-background {
+    background-color: #FAF5CE;
+    height: 20rem;
+}
+
 /* ----- Mission ----- */
 
 #mission {
@@ -245,7 +252,10 @@ nav a {
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 1fr 1fr;
     padding-top: 3.125rem;
-    background-color:#7B9372;
+    /* background-color:#7B9372; */
+    /* background-color: #3b76a3; */
+    background-color:#3b76a3;;
+    /* color: #FAF5CE; */
     color: #FAF5CE;
     z-index: 1;
 }
@@ -267,9 +277,13 @@ nav a {
 }
 
 .outline {
-    -webkit-text-fill-color: #7B9E72; 
-    -webkit-text-stroke-width: 0.0625rem;
-    -webkit-text-stroke-color:#F4A41F;
+    /* -webkit-text-fill-color: #7B9E72;  */
+    /* -webkit-text-fill-color: #3b76a3; */
+    -webkit-text-fill-color: #3b76a3;;
+    /* -webkit-text-stroke-width: 0.0625rem; */
+    -webkit-text-stroke-width: 0.175rem;
+    /* -webkit-text-stroke-color: #e2838a; */
+    -webkit-text-stroke-color: #E58B3C;
 }
 
 #newsletter form {
@@ -285,9 +299,12 @@ nav a {
     border: 0;
     border-radius: 0;
     border-bottom: 0.125rem solid #FAF5CE;
-    background-color: #7B9372;
+    /* background-color: #7B9372; */
+    background-color: #3b76a3;
+    /* background-color: rgb(26,43,62); */
     box-shadow: none;
-    color: #FAF5CE;
+    /* color: #FAF5CE; */
+    color:rgb(26,43,62);
 
 }
  #email {
@@ -769,8 +786,13 @@ input {
         height: 65rem;
     }
 
+    nav a {
+        font-size: 1.5rem;
+    }
+
     #main-title {
-        height: 60%;
+        /* height: 60%; */
+        height: 100%;
     }
 
     #main-title img {
@@ -890,8 +912,8 @@ input {
     }
     
     #map-lines {
-        height: 25rem;
-        bottom: 10rem;
+        height: 50rem;
+        bottom: 35rem;
     }
 
     footer {
