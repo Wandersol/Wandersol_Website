@@ -162,7 +162,7 @@ nav a {
 }
 #monetary {
     
-    background-color: #3b76a3;
+    background-color: #7B9E72;
 }
 
 #volunteer {
@@ -180,7 +180,7 @@ nav a {
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 1fr 1fr;
     padding-top: 3.125rem;
-    background-color:#7B9372;
+    background-color:#3b76a3;
     color: #FAF5CE;
     z-index: 1;
 }
@@ -202,7 +202,7 @@ nav a {
 }
 
 .outline {
-    -webkit-text-fill-color: #7B9E72; 
+    -webkit-text-fill-color:#3b76a3;
     -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color:#F4A41F;
 }
@@ -221,7 +221,7 @@ nav a {
     border: 0;
     border-radius: 0;
     border-bottom: 0.125rem solid #FAF5CE;
-    background-color: #7B9372;
+    background-color:#3b76a3;
     box-shadow: none;
     color: #FAF5CE;
 
