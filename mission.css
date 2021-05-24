@@ -180,7 +180,7 @@ img {
 
 .outline {
     -webkit-text-fill-color: #7B9E72; 
-    -webkit-text-stroke-width: 0.175rem;
+    -webkit-text-stroke-width: 0.1rem;
     -webkit-text-stroke-color:#F4A41F;
 }
 
@@ -618,6 +618,10 @@ input {
 
     #total {
         font-size: 1rem;
+    }
+
+    .outline {
+        -webkit-text-stroke-width: 0.175rem;
     }
 
     footer {
