@@ -26,7 +26,8 @@ body {
         "left"
         "right"
         "copy"
-        "counter"
+        "number"
+        "total"
         "newsletter"
         "map"
         "footer";
@@ -118,35 +119,42 @@ img {
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
     font-size: 0.75rem;
+    color: #2D4826;
 }
 
 #copy p {
     grid-column: 2/12;
+    text-align: center;
 }
 
-#counter {
+/* #counter {
     grid-area: counter;
     grid-column: 1/13;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
-}
+}*/
 
 #number {
-    grid-column: 3/10;
-    grid-row: 1/2;
+    grid-area: number;
+    grid-column: 1/13;
+    grid-row: 5/6;
     font-size: 1.25rem;
     margin: 1.25rem auto;
     font-family: filson-pro, sans-serif;
     font-weight: 900;
     font-style: normal;
+    margin: 0 auto;
+    color:#2D4826;
 }
 
 #total {
     grid-column: 1/13;
-    grid-row: 2/3;
+    grid-row: 6/7;
     font-size: 0.65rem;
+    margin: 1rem auto 2rem auto;
+    color: #2D4826;
 }
 
 #newsletter {
@@ -556,7 +564,8 @@ input {
         "nav"
         "left right"
         "copy right"
-        "counter"
+        "number"
+        "total"
         "newsletter"
         "map"
         "footer";
@@ -574,6 +583,7 @@ input {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         height: 9rem;
+        margin-top: -3rem;
     }
 
     .left h2 {
@@ -611,13 +621,23 @@ input {
         display: block;
     }
 
+    #copy p {
+        text-align: left;
+    }
+
     #counter {
         grid-row: 4/5;
         margin-top: 2rem;
     }
 
+    #number {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
     #total {
         font-size: 1rem;
+        margin-bottom: 5rem;
     }
 
     .outline {
@@ -647,7 +667,12 @@ input {
         font-size: 1.5rem;
     }
 
-    #counter {
-        margin: 10rem auto;
+    #number {
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+
+    #total {
+        margin-bottom: 10rem;
     }
 }
