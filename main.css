@@ -841,14 +841,15 @@ input {
         height: 38.25rem;
         background-color: #e2838a;
         padding: 0;
-        margin: 8rem 0rem 0rem 0rem;       
+        margin: 8rem 0rem 0rem 0rem;
+         /* top margin was 20rem */
     }
 
     #desc-text {
         grid-column: 7/12;
         grid-row: 1/2;
         padding: 0;
-        margin: 20rem 0rem 0rem 1rem;
+        margin: 8rem 0rem 0rem 1rem;
     }
 
     #desc-text h3 {
@@ -868,7 +869,8 @@ input {
     #how-text {
         grid-column: 2/6;
         grid-row: 1/2;
-        padding: 15rem 0rem 0rem 0rem;
+        /* padding: 15rem 0rem 0rem 0rem; */
+        padding: 5rem 0rem 0rem 0rem;
     }
 
     #how-image{
