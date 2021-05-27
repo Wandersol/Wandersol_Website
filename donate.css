@@ -141,7 +141,7 @@ nav a {
     border:solid #3B76A2;
     border-width: 0 3px 3px 0;
     display:inline-block;
-    padding:9px;
+    padding:6px;
 }
 .left{
     transform: rotate(135deg);
@@ -565,11 +565,11 @@ input {
     
 }
 /*--Ipad and Ipad Pro--*/
-@media only screen and (min-width:721px) and (max-width:1349px){
+/* @media only screen and (min-width:721px) and (max-width:1349px){
     #difference {
-        padding-top:12%;
+        padding-top:4%;
     }
-}
+} */
 /* ----- Media Query ----- */
 
 /* ----- Ipad Pro ----- */
@@ -640,10 +640,10 @@ input {
         margin-top: 3rem;
     }
 
-    #difference {
-        /*padding-top: 0;*/
+    /* #difference {
+        padding-top: 0;
         margin-top: 3rem;
-    }
+    } */
 
     #ways {
         margin-top: -1rem;
@@ -658,7 +658,7 @@ input {
         font-size: 1rem;
     }
 }
-/*---mobile-----*/
+/* ---mobile-----
 @media only screen and (max-width:720px){
     .arrow{
         padding:6px;
@@ -666,4 +666,4 @@ input {
     #difference{
         padding-top:12%;
     }
-}
+} */
