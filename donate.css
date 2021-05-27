@@ -618,6 +618,48 @@ input {
     footer {
         padding-bottom: 5rem;
     }
+
+    .modal-content {
+        width: 50rem;
+        height: 40rem;
+    }
+
+    #modal-image img{
+        width: 25rem;
+        height: 40rem;
+        display: inline;
+        object-fit: cover;  
+    }
+    
+    #modal-form {
+        width: 25rem;
+        height: 40rem;
+        display: inline;
+    }
+
+    #modal-form h3 {
+        font-size: 2rem;
+        padding-bottom: 0;
+        margin-top: 4rem;
+    }
+    
+    #modal-form p {
+        margin-bottom: 2rem;
+    }
+    
+    input {
+        width: 20rem;
+    }
+    
+    #message {
+        width: 20rem;
+        padding-bottom: 15rem;
+    }
+    
+    #modal-submit {
+        margin: 2rem auto;
+        width: 15rem;
+    } 
 }
 
 /* -------------------------------------- Media Query ----------------------------------------- */
