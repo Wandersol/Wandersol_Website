@@ -127,15 +127,6 @@ img {
     text-align: center;
 }
 
-/* #counter {
-    grid-area: counter;
-    grid-column: 1/13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
-}*/
-
 #number {
     grid-area: number;
     grid-column: 1/13;
@@ -150,6 +141,7 @@ img {
 }
 
 #total {
+    grid-area: total;
     grid-column: 1/13;
     grid-row: 6/7;
     font-size: 0.65rem;
@@ -188,7 +180,7 @@ img {
 
 .outline {
     -webkit-text-fill-color: #3b76a3;
-    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-width: 0.0625rem;
     -webkit-text-stroke-color:#F4A41F;
 }
 
@@ -638,10 +630,6 @@ input {
     #total {
         font-size: 1rem;
         margin-bottom: 5rem;
-    }
-
-    .outline {
-        -webkit-text-stroke-width: 0.175rem;
     }
 
     footer {

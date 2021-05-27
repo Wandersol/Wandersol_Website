@@ -25,8 +25,6 @@ body {
         "desc-text"
         "how-image"
         "how-text"
-        /* "mission-image"
-        "mission-text" */
         "cream-background"
         "newsletter"
         "map"
@@ -61,7 +59,6 @@ nav {
 
 nav a {
     color: #E9A642;
-    /* color: rgb(26,42,63); */
     font-size: 0.8rem;
     font-weight: bold;
     font-family: filson-pro, sans-serif;
@@ -73,7 +70,6 @@ nav a {
 #logo-home {
     grid-column: 2/3;
     color: #E9A642;
-    /* color: rgb(26,42,63); */
     font-family: cubano, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -269,10 +265,7 @@ nav a {
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 1fr 1fr;
     padding-top: 3.125rem;
-    /* background-color:#7B9372; */
-    /* background-color: #3b76a3; */
     background-color:#3b76a3;
-    /* color: #FAF5CE; */
     color: #FAF5CE;
     z-index: 1;
 }
@@ -297,8 +290,8 @@ nav a {
     /* -webkit-text-fill-color: #7B9E72;  */
     /* -webkit-text-fill-color: #3b76a3; */
     -webkit-text-fill-color: #3b76a3;;
-    /* -webkit-text-stroke-width: 0.0625rem; */
-    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-width: 0.0625rem;
+    /* -webkit-text-stroke-width: 0.1rem; */
     /* -webkit-text-stroke-color: #e2838a; */
     -webkit-text-stroke-color: #E58B3C;
 }
@@ -771,10 +764,6 @@ input {
 
     #mission-text p {
         font-size: 1rem;
-    }
-
-    .outline {
-        -webkit-text-stroke-width: 0.175rem;
     }
 
     #map-lines {

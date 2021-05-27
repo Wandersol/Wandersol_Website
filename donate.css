@@ -203,7 +203,7 @@ nav a {
 
 .outline {
     -webkit-text-fill-color:#3b76a3;
-    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-width: 0.0625rem;
     -webkit-text-stroke-color:#F4A41F;
 }
 
@@ -619,10 +619,6 @@ input {
 
     #newsletter input {
         width: 15rem;
-    }
-
-    .outline {
-        -webkit-text-stroke-width: 0.175rem;
     }
 
     footer {
