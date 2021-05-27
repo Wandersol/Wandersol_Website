@@ -708,6 +708,7 @@ input {
 }
 
 /* --------------------------------------- Media Query --------------------------------------- */
+
 /* ----- Ipad Pro ----- */
 
 @media only screen and (min-width: 980px) {
@@ -747,6 +748,7 @@ input {
 }
 
 /* ----------------------------------------- Media Query ------------------------------------- */
+
 /* ----- Desktop Styles ----- */
 
 @media only screen and (min-width: 1350px) {
@@ -840,18 +842,12 @@ input {
     }
 
     #add-to-cart {
-        /* width: 80%; */
         grid-column: 11/12;
         grid-row: 6/7;
         height: 2rem;
         display: inline-block;
         margin-left: 3rem;
     }
-
-    /* #additional-images {
-        grid-column: 2/9;
-        grid-row: 7/8;
-    } */
 
     .addtl-class {
         width: 5rem;
@@ -895,6 +891,8 @@ input {
     } 
 }
 
+/* -------------------------------- Media Query ----------------------------------------------- */
+
 @media only screen and (min-width: 1455px) {
     #additional-images {  
         grid-row: 7/8;
@@ -913,6 +911,8 @@ input {
         margin-left: -3rem;
     }
 }
+
+/* ----------------------------------- Media Query ------------------------------------------- */
 
 @media only screen and (min-width: 1675px) {
     #add-to-cart {

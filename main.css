@@ -98,7 +98,6 @@ nav a {
     background-color: rgba(26,42,63,.5);
     background-repeat: no-repeat;
     background-position: center top;
-    /* height: 15rem; */
     height: 100%;
     padding: 0;
 }
@@ -108,7 +107,6 @@ nav a {
     margin: auto;
     display: block;
     position: relative;
-    /* top: 25%; */
 }
 
 #description {
@@ -287,12 +285,8 @@ nav a {
 }
 
 .outline {
-    /* -webkit-text-fill-color: #7B9E72;  */
-    /* -webkit-text-fill-color: #3b76a3; */
     -webkit-text-fill-color: #3b76a3;;
     -webkit-text-stroke-width: 0.0625rem;
-    /* -webkit-text-stroke-width: 0.1rem; */
-    /* -webkit-text-stroke-color: #e2838a; */
     -webkit-text-stroke-color: #E58B3C;
 }
 
@@ -309,11 +303,8 @@ nav a {
     border: 0;
     border-radius: 0;
     border-bottom: 0.125rem solid #FAF5CE;
-    /* background-color: #7B9372; */
     background-color: #3b76a3;
-    /* background-color: rgb(26,43,62); */
     box-shadow: none;
-    /* color: #FAF5CE; */
     color:rgb(26,43,62);
 
 }
@@ -425,6 +416,8 @@ footer a {
     color: #2D4826;
     font-size: 1.5rem !important;
 }
+
+/* ----- Pop Up Modal -----  */
 
 .bg-modal {
     width: 100%;
@@ -557,7 +550,6 @@ input {
     }
 
     #main-title {
-        /* height: 40%; */
         height: 100%;
     }
 
@@ -695,7 +687,8 @@ input {
         cursor: pointer;
     }
     
-    #modal-image img{
+    /* photo by Jasmin Joel on Unsplash.com */
+    #modal-image img {
         display: inline;
         width: 18.75rem;
         height: 25rem;
@@ -704,20 +697,20 @@ input {
 } 
 
 /* -------------------------------- Media Query --------------------------------------- */
+
 /* ----- Ipad Pro ----- */
+
 @media only screen and (min-width: 1000px) {
     #hero {
         height: 85.375rem;
     }
 
     #main-title {
-        /* height: 45%; */
         height: 100%;
     }
 
     #main-title img {
         width: 50%;
-        /* top: 30%; */
     }
 
     #description, #how, #mission {
@@ -777,10 +770,54 @@ input {
         padding-bottom: 5rem;
         padding-top: 2rem;
     }
+
+    .modal-content {
+        width: 50rem;
+        height: 40rem;
+    }
+
+    #modal-image img{
+        width: 25rem;
+        height: 40rem;
+        display: inline;
+        object-fit: cover;  
+    }
+    
+    #modal-form {
+        width: 25rem;
+        height: 40rem;
+        display: inline;
+    }
+
+    #modal-form h3 {
+        font-size: 2rem;
+        padding-bottom: 0;
+        margin-top: 4rem;
+    }
+    
+    #modal-form p {
+        margin-bottom: 2rem;
+    }
+    
+    input {
+        width: 20rem;
+    }
+    
+    #message {
+        width: 20rem;
+        padding-bottom: 15rem;
+    }
+    
+    #modal-submit {
+        margin: 2rem auto;
+        width: 15rem;
+    }    
 }
 
 /* -------------------------------- Media Query --------------------------------------- */
+
 /* ----- Desktop Styles ------ */
+
 @media only screen and (min-width:1350px) {
     body {
         grid-template-columns: repeat(12, 1 fr);
@@ -803,7 +840,6 @@ input {
     }
 
     #main-title {
-        /* height: 60%; */
         height: 100%;
     }
 
@@ -831,7 +867,6 @@ input {
         background-color: #e2838a;
         padding: 0;
         margin: 8rem 0rem 0rem 0rem;
-         /* top margin was 20rem */
     }
 
     #desc-text {
@@ -858,7 +893,6 @@ input {
     #how-text {
         grid-column: 2/6;
         grid-row: 1/2;
-        /* padding: 15rem 0rem 0rem 0rem; */
         padding: 5rem 0rem 0rem 0rem;
     }
 
@@ -975,14 +1009,6 @@ input {
     #footer-cust-serv {
         grid-column: 8/10;
     }
-
-    /* footer #email {
-        grid-column:4/5;
-    }
-
-    footer img {
-        grid-column: 5/6;
-    } */
 
     #modal-submit {
         margin: 0.75 auto;

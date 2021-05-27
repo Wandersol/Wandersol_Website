@@ -13,7 +13,6 @@ a {
 
 body {
     margin: 0;
-    /* padding: 1rem; */
     background-color: #FAF5CE;
     font-family: filson-pro, sans-serif;
     font-weight: 400;
@@ -212,7 +211,6 @@ nav a {
     grid-row: 2/3;
     margin: 0 auto;
     padding-top: 2rem;
-    /* padding-left: 0.75rem; */
     padding-bottom: 2rem;
 }
 
@@ -454,7 +452,7 @@ input {
     display: none;
 }
 
-/* ----- Media Query ----- */
+/* ---------------------------------- Media Query ----------------------------------------- */
 
 /* ----- Tablet Styles ----- */
 @media only screen and (min-width: 680px){
@@ -564,13 +562,8 @@ input {
     }
     
 }
-/*--Ipad and Ipad Pro--*/
-/* @media only screen and (min-width:721px) and (max-width:1349px){
-    #difference {
-        padding-top:4%;
-    }
-} */
-/* ----- Media Query ----- */
+
+/* ----------------------------------------- Media Query ------------------------------------ */
 
 /* ----- Ipad Pro ----- */
 
@@ -627,6 +620,10 @@ input {
     }
 }
 
+/* -------------------------------------- Media Query ----------------------------------------- */
+
+/* ----- Desktop Styles ----- */
+
 @media only screen and (min-width: 1350px) {
     nav {
         padding-bottom: 2rem;
@@ -639,11 +636,6 @@ input {
     #donate {
         margin-top: 3rem;
     }
-
-    /* #difference {
-        padding-top: 0;
-        margin-top: 3rem;
-    } */
 
     #ways {
         margin-top: -1rem;
@@ -658,12 +650,3 @@ input {
         font-size: 1rem;
     }
 }
-/* ---mobile-----
-@media only screen and (max-width:720px){
-    .arrow{
-        padding:6px;
-    }
-    #difference{
-        padding-top:12%;
-    }
-} */
