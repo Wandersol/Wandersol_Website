@@ -625,10 +625,11 @@ input {
         height: 25rem;
     }
 
-    #footer {
-        height: 5rem;
+    footer {
+        height: 15rem;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        font-size: 0.75rem;
     }
     
     #chevron-up {
@@ -773,7 +774,6 @@ input {
 
     footer {
         height: 20rem;
-        font-size: 0.75rem;
         padding-bottom: 5rem;
         padding-top: 2rem;
     }
@@ -940,6 +940,10 @@ input {
         padding-top: 0 !important;
         font-size: 1rem;
         padding-bottom: 10rem;
+    }
+
+    footer a {
+        font-size: 1rem;
     }
 
     #footer-contact, #footer-about, #footer-cust-serv, #footer-social {

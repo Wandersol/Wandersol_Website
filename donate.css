@@ -488,12 +488,13 @@ input {
         margin-top: 5rem;
     }
 
-    /* #pack {
-        margin-left: 15%;
-    } */
-
     #pack, #monetary {
         margin-right: 3%;
+    }
+
+    footer {
+        font-size: 0.75rem;
+        height: 15rem;
     }
 
     .modal-content {
@@ -565,7 +566,7 @@ input {
 }
 /*--Ipad and Ipad Pro--*/
 @media only screen and (min-width:721px) and (max-width:1349px){
-    #difference{
+    #difference {
         padding-top:12%;
     }
 }
@@ -622,7 +623,6 @@ input {
     }
 
     footer {
-        font-size: 0.9rem;
         padding-bottom: 5rem;
     }
 }
@@ -652,6 +652,10 @@ input {
     #newsletter p {
         /* Note: 'vw' stands for view-port-width */
         font-size: 2.5vw; 
+    }
+
+    footer, footer a {
+        font-size: 1rem;
     }
 }
 /*---mobile-----*/
