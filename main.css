@@ -122,9 +122,15 @@ nav a {
     grid-area: desc-image;
     width: 18rem;
     height: 24rem;
-    background-color: #e2838a;
-    padding-top: 10rem;
+    /* background-color: #e2838a; */
+    /* padding-top: 10rem; */
     margin: 3rem auto;
+}
+
+#desc-image img, #how-image img {
+    width: 18rem;
+    height: 24rem;
+    object-fit: contain;
 }
 
 #desc-text {
@@ -178,8 +184,8 @@ nav a {
     grid-area: how-image;
     width: 18rem;
     height: 24rem;
-    background-color: #3b76a3;
-    padding-top: 10rem;
+    /* background-color: #3b76a3; */
+    /* padding-top: 10rem; */
     margin: 3rem auto;
 }
 
@@ -344,10 +350,9 @@ input::placeholder {
 #map-lines {
     grid-column: 1/13;
     width: 100%;
-    height: 25rem;
+    height: 15rem;
     object-fit: cover;
     position: relative;
-    bottom: 10rem;
 }
 
 /* ----- Footer ----- */
@@ -557,10 +562,24 @@ input {
         width: 50%;
     }
 
+    #description {
+        margin:0;
+        padding:0;
+    }
+
     #desc-image, #how-image {
+        height: 35rem;
+        width: 30rem;
+        margin-left: 9.5rem;
+    }
+
+    #desc-image img, #how-image img {
+        width: 35rem;
         height: 30rem;
-        width: 25rem;
-        margin-top: 8rem;
+        /* object-fit: contain; */
+        padding: 0;
+        margin-left: -3rem;
+        margin-top: 3rem;
     }
 
     #desc-text, #how-text {
@@ -614,7 +633,7 @@ input {
     }
 
     #map-lines {
-        height: 25rem;
+        height: 15rem;
     }
 
     footer {
@@ -729,7 +748,12 @@ input {
         width: 31rem;
         height: 46.5rem;
         margin-top: 8rem;
-        margin-left: 8rem;
+        margin-left: 7.5rem;
+    }
+
+    #desc-image img, #how-image img {
+        width: 55rem;
+        height: 40rem;
     }
 
     .read-more-light a, .read-more-dark a {
@@ -864,9 +888,16 @@ input {
         grid-row: 1/2;
         width: 35rem;
         height: 38.25rem;
-        background-color: #e2838a;
+        /* background-color: #e2838a; */
         padding: 0;
         margin: 8rem 0rem 0rem 0rem;
+    }
+
+    #desc-image img, #how-image img {
+        width: 55rem;
+        height: 40rem;
+        margin-left: -10rem;
+        margin-top: -.5rem;
     }
 
     #desc-text {
@@ -899,7 +930,7 @@ input {
     #how-image{
         grid-column: 7/12;
         grid-row: 1/2;
-        background-color: #3b76a3;
+        /* background-color: #3b76a3; */
         width: 35rem;
         height: 38.25rem;
         padding: 0;
