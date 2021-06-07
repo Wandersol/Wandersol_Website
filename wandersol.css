@@ -888,7 +888,6 @@ input {
         grid-row: 6/7;
         height: 2rem;
         display: inline-block;
-        /* margin-left: 3rem; */
         margin: 0rem;
     }
 
@@ -900,6 +899,10 @@ input {
         margin-right: 1rem;
         line-height: 5rem;
         margin-top: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 
     .card {
