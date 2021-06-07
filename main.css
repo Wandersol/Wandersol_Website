@@ -67,6 +67,10 @@ nav a {
     padding-left: 1rem;
 }
 
+nav a:hover, #logo-home:hover {
+    color:#3b76a3;
+}
+
 #logo-home {
     grid-column: 2/3;
     color: #E9A642;

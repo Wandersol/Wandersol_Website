@@ -61,6 +61,10 @@ nav a {
     font-style: normal;
 }
 
+nav a:hover, #logo-home:hover {
+    color:#3b76a3;
+}
+
 #nav-products {
     grid-column: 4/5;
 }
@@ -478,7 +482,7 @@ input {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     #pack, #monetary, #volunteer {
@@ -607,10 +611,6 @@ input {
         margin-right: 3%;
     }
 
-    #pack, #monetary, #volunteer {
-        margin-top: 10rem;
-    }
-
     #newsletter input {
         width: 15rem;
     }
@@ -681,6 +681,11 @@ input {
 
     #ways {
         margin-top: -1rem;
+    }
+
+    #difference h5 {
+        font-size:1.5rem;
+        font-family: 'Cubano', sans-serif;
     }
 
     #newsletter p {

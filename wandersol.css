@@ -52,6 +52,10 @@ nav a {
     font-style: normal;
 }
 
+nav a:hover, #logo-home:hover {
+    color:#3b76a3;
+}
+
 #nav-products {
     grid-column: 4/5;
 }
@@ -166,7 +170,7 @@ nav a {
     background-color: #2D4826;
     color:#FAF5CE;
     padding: 5px 15px;
-    font-size: 0.125rem;
+    font-size: 0.35rem;
     font-weight: bold;
     cursor: pointer;
     width:80%;
@@ -210,7 +214,7 @@ nav a {
     width: 6.25rem;
     font-weight: bold;
     color: #FAF5CE !important;
-    font-size: 0.125rem;
+    font-size: 0.35rem;
     box-shadow: 1px 1px 1px #DEDEDE;
     padding: 5px 15px;
     background: #2D4826;
@@ -594,6 +598,7 @@ input {
     #add-to-cart {
         grid-column: 4/7;
         width: 80%;
+        font-size: 0.5rem;
     }
 
 
