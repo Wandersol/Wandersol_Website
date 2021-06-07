@@ -135,6 +135,7 @@ nav a:hover, #logo-home:hover {
     width: 18rem;
     height: 24rem;
     object-fit: contain;
+    margin: 3rem auto;
 }
 
 #desc-text {
@@ -528,9 +529,9 @@ input {
     }
 
     #desc-image, #how-image {
-        height: 35rem;
-        width: 30rem;
-        margin-left: 9.5rem;
+        width: 35rem;
+        height: 30rem;
+        /* margin-left: 9.5rem; */
     }
 
     #desc-image img, #how-image img {
@@ -540,10 +541,12 @@ input {
         padding: 0;
         margin-left: -3rem;
         margin-top: 3rem;
+        margin: 3rem auto;
     }
 
     #desc-text, #how-text {
         padding: 0rem 8rem;
+        margin-top: 10rem;
     }
 
     #desc-text h3, #how-text h3 {
@@ -670,6 +673,10 @@ input {
         height: 85.375rem;
     }
 
+    /* #desc-text, #how-text {
+        margin-top: 10rem;
+    } */
+
     #desc-text h3, #how-text h3 {
         font-size: 2.5rem;
     }
@@ -679,10 +686,12 @@ input {
     }
 
     #desc-image, #how-image {
-        width: 31rem;
-        height: 46.5rem;
+        /* width: 31rem;
+        height: 46.5rem; */
+        width: 55rem;
+        height: 40rem;
         margin-top: 8rem;
-        margin-left: 7.5rem;
+        /* margin-left: 7.5rem; */
     }
 
     #desc-image img, #how-image img {
@@ -760,7 +769,7 @@ input {
 
 /* ----- Desktop Styles ------ */
 
-@media only screen and (min-width:1250px) {
+@media only screen and (min-width:1350px) {
     body {
         grid-template-columns: repeat(12, 1 fr);
         grid-template-areas: 
@@ -811,14 +820,14 @@ input {
     }
 
     #desc-image img, #how-image img {
-        width: 55rem;
-        height: 40rem;
+        /* width: 55rem;
+        height: 40rem; */
         margin-left: -10rem;
         margin-top: -.5rem;
     }
 
     #desc-text {
-        grid-column: 7/12;
+        grid-column: 7/11;
         grid-row: 1/2;
         padding: 0;
         margin: 8rem 0rem 0rem 8rem;
@@ -839,7 +848,7 @@ input {
     }
 
     #how-text {
-        grid-column: 2/6;
+        grid-column: 2/5;
         grid-row: 1/2;
         padding: 5rem 0rem 0rem 0rem;
     }
