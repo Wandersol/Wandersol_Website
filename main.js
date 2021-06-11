@@ -26,7 +26,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-
+//Uses setInterval and clearInterval to make the counter
 var currentDonations = 134312323;
 var countdown = setInterval(function() {
     //This will increment the number up by a random integer value
