@@ -32,7 +32,7 @@ var countdown = setInterval(function() {
     //This will increment the number up by a random integer value
     currentDonations = currentDonations + getRandomInt(1, 3);
     //Updates the number on the webpage.
-    document.getElementById("bag-number").innerHTML = currentDonations;
+    document.getElementById("number").innerHTML = currentDonations;
 
     //Keeps the number from going up into perpetuity...
     if(currentDonations === 134312400) {
