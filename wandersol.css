@@ -714,7 +714,7 @@ input {
     }
 
     #modal-submit {
-        font-size: 0.4rem;
+        font-size: 0.75rem;
         margin: 1.5rem auto;
     }
 
@@ -816,6 +816,7 @@ input {
     #modal-submit {
         margin: 2rem auto;
         width: 15rem;
+        font-size: 0.75rem;
     } 
 }
 
@@ -906,6 +907,7 @@ input {
         height: 2rem;
         padding: 10px 80px;
         width: 100%;
+        font-size: 0.65rem;
     }
 
     .dropdown-content {
@@ -923,6 +925,7 @@ input {
         height: 2rem;
         display: inline-block;
         margin: 0rem;
+        font-size: 0.65rem;
     }
 
     .addtl-class {
